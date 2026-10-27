@@ -1,0 +1,8 @@
+Build notes (demo)
+==================
+
+1. Run the linter before every commit.
+2. Tabs	and	spaces	are	kept	as is.
+3. 中文行：保持原样显示，不当 Markdown 解析。 **not bold**
+4.繁體行：維持原樣。
+<script>alert("not executed")</script>

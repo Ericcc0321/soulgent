@@ -1,0 +1,3032 @@
+{
+ "note": "One foreground layer per desk, cut from the seaview render. box_px = x, y, w, h in night_base.png pixels (top-left origin). A desk covers a figure whose feet are behind it: the feet point against the footprint (u along (cos yaw, sin yaw), v across), seen along camera_forward_world.",
+ "picture": [
+  2400,
+  1600
+ ],
+ "camera_forward_world": [
+  -0.369949,
+  0.695772,
+  -0.615661
+ ],
+ "desks": [
+  {
+   "id": "Web_1",
+   "zone": "Web",
+   "index": 1,
+   "kind": "workstation",
+   "row": 0,
+   "column": 0,
+   "box_px": [
+    391,
+    655,
+    124,
+    162
+   ],
+   "sort_y_px": 778.4568,
+   "camera_depth_m": 39.927807,
+   "footprint": {
+    "center_world": [
+     -7.2,
+     -1.5
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_1.png",
+     "box_px": [
+      391,
+      655,
+      124,
+      162
+     ],
+     "bytes": 24185
+    },
+    "screen": {
+     "file": "Web_1_screen.png",
+     "box_px": [
+      441,
+      673,
+      60,
+      53
+     ],
+     "bytes": 6748
+    },
+    "led": {
+     "file": "Web_1_led.png",
+     "box_px": [
+      391,
+      655,
+      87,
+      104
+     ],
+     "bytes": 12791
+    }
+   },
+   "fit_residual": 1.37
+  },
+  {
+   "id": "Web_2",
+   "zone": "Web",
+   "index": 2,
+   "kind": "workstation",
+   "row": 0,
+   "column": 1,
+   "box_px": [
+    472,
+    576,
+    124,
+    129
+   ],
+   "sort_y_px": 684.4261,
+   "camera_depth_m": 41.068874,
+   "footprint": {
+    "center_world": [
+     -7.2,
+     0.14
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_2.png",
+     "box_px": [
+      472,
+      576,
+      124,
+      129
+     ],
+     "bytes": 20776
+    },
+    "screen": {
+     "file": "Web_2_screen.png",
+     "box_px": [
+      522,
+      579,
+      60,
+      53
+     ],
+     "bytes": 6436
+    },
+    "led": {
+     "file": "Web_2_led.png",
+     "box_px": [
+      472,
+      576,
+      88,
+      89
+     ],
+     "bytes": 11902
+    }
+   },
+   "fit_residual": 1.26
+  },
+  {
+   "id": "Web_3",
+   "zone": "Web",
+   "index": 3,
+   "kind": "workstation",
+   "row": 0,
+   "column": 2,
+   "box_px": [
+    553,
+    467,
+    125,
+    144
+   ],
+   "sort_y_px": 590.3955,
+   "camera_depth_m": 42.209938,
+   "footprint": {
+    "center_world": [
+     -7.2,
+     1.78
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_3.png",
+     "box_px": [
+      553,
+      467,
+      125,
+      144
+     ],
+     "bytes": 22722
+    },
+    "screen": {
+     "file": "Web_3_screen.png",
+     "box_px": [
+      603,
+      485,
+      61,
+      53
+     ],
+     "bytes": 6793
+    },
+    "led": {
+     "file": "Web_3_led.png",
+     "box_px": [
+      553,
+      467,
+      88,
+      104
+     ],
+     "bytes": 13177
+    }
+   },
+   "fit_residual": 1.48
+  },
+  {
+   "id": "Web_4",
+   "zone": "Web",
+   "index": 4,
+   "kind": "workstation",
+   "row": 0,
+   "column": 3,
+   "box_px": [
+    635,
+    390,
+    124,
+    128
+   ],
+   "sort_y_px": 496.3649,
+   "camera_depth_m": 43.351006,
+   "footprint": {
+    "center_world": [
+     -7.2,
+     3.42
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_4.png",
+     "box_px": [
+      635,
+      390,
+      124,
+      128
+     ],
+     "bytes": 20801
+    },
+    "screen": {
+     "file": "Web_4_screen.png",
+     "box_px": [
+      684,
+      391,
+      61,
+      53
+     ],
+     "bytes": 6516
+    },
+    "led": {
+     "file": "Web_4_led.png",
+     "box_px": [
+      635,
+      390,
+      87,
+      87
+     ],
+     "bytes": 11947
+    }
+   },
+   "fit_residual": 1.23
+  },
+  {
+   "id": "Web_5",
+   "zone": "Web",
+   "index": 5,
+   "kind": "workstation",
+   "row": 0,
+   "column": 4,
+   "box_px": [
+    716,
+    279,
+    124,
+    144
+   ],
+   "sort_y_px": 402.3341,
+   "camera_depth_m": 44.492073,
+   "footprint": {
+    "center_world": [
+     -7.2,
+     5.06
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_5.png",
+     "box_px": [
+      716,
+      279,
+      124,
+      144
+     ],
+     "bytes": 23117
+    },
+    "screen": {
+     "file": "Web_5_screen.png",
+     "box_px": [
+      766,
+      297,
+      60,
+      53
+     ],
+     "bytes": 6872
+    },
+    "led": {
+     "file": "Web_5_led.png",
+     "box_px": [
+      716,
+      279,
+      87,
+      104
+     ],
+     "bytes": 13541
+    }
+   },
+   "fit_residual": 1.41
+  },
+  {
+   "id": "Web_6",
+   "zone": "Web",
+   "index": 6,
+   "kind": "workstation",
+   "row": 0,
+   "column": 5,
+   "box_px": [
+    797,
+    202,
+    124,
+    127
+   ],
+   "sort_y_px": 308.3035,
+   "camera_depth_m": 45.633141,
+   "footprint": {
+    "center_world": [
+     -7.2,
+     6.7
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_6.png",
+     "box_px": [
+      797,
+      202,
+      124,
+      127
+     ],
+     "bytes": 20623
+    },
+    "screen": {
+     "file": "Web_6_screen.png",
+     "box_px": [
+      847,
+      203,
+      60,
+      53
+     ],
+     "bytes": 6596
+    },
+    "led": {
+     "file": "Web_6_led.png",
+     "box_px": [
+      797,
+      202,
+      87,
+      87
+     ],
+     "bytes": 11843
+    }
+   },
+   "fit_residual": 1.24
+  },
+  {
+   "id": "Web_7",
+   "zone": "Web",
+   "index": 7,
+   "kind": "workstation",
+   "row": 1,
+   "column": 0,
+   "box_px": [
+    475,
+    689,
+    128,
+    154
+   ],
+   "sort_y_px": 805.8941,
+   "camera_depth_m": 39.594852,
+   "footprint": {
+    "center_world": [
+     -6.3,
+     -1.5
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_7.png",
+     "box_px": [
+      475,
+      689,
+      128,
+      154
+     ],
+     "bytes": 24511
+    },
+    "screen": {
+     "file": "Web_7_screen.png",
+     "box_px": [
+      493,
+      689,
+      60,
+      61
+     ],
+     "bytes": 6257
+    },
+    "led": {
+     "file": "Web_7_led.png",
+     "box_px": [
+      516,
+      695,
+      87,
+      112
+     ],
+     "bytes": 14901
+    }
+   },
+   "fit_residual": 1.24
+  },
+  {
+   "id": "Web_8",
+   "zone": "Web",
+   "index": 8,
+   "kind": "workstation",
+   "row": 1,
+   "column": 1,
+   "box_px": [
+    556,
+    594,
+    129,
+    155
+   ],
+   "sort_y_px": 711.8635,
+   "camera_depth_m": 40.73592,
+   "footprint": {
+    "center_world": [
+     -6.3,
+     0.14
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_8.png",
+     "box_px": [
+      556,
+      594,
+      129,
+      155
+     ],
+     "bytes": 23940
+    },
+    "screen": {
+     "file": "Web_8_screen.png",
+     "box_px": [
+      574,
+      594,
+      61,
+      62
+     ],
+     "bytes": 6653
+    },
+    "led": {
+     "file": "Web_8_led.png",
+     "box_px": [
+      597,
+      601,
+      88,
+      112
+     ],
+     "bytes": 14901
+    }
+   },
+   "fit_residual": 1.07
+  },
+  {
+   "id": "Web_9",
+   "zone": "Web",
+   "index": 9,
+   "kind": "workstation",
+   "row": 1,
+   "column": 2,
+   "box_px": [
+    637,
+    501,
+    129,
+    154
+   ],
+   "sort_y_px": 617.8329,
+   "camera_depth_m": 41.876987,
+   "footprint": {
+    "center_world": [
+     -6.3,
+     1.78
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_9.png",
+     "box_px": [
+      637,
+      501,
+      129,
+      154
+     ],
+     "bytes": 23655
+    },
+    "screen": {
+     "file": "Web_9_screen.png",
+     "box_px": [
+      655,
+      501,
+      61,
+      61
+     ],
+     "bytes": 6587
+    },
+    "led": {
+     "file": "Web_9_led.png",
+     "box_px": [
+      678,
+      507,
+      88,
+      112
+     ],
+     "bytes": 14478
+    }
+   },
+   "fit_residual": 1.02
+  },
+  {
+   "id": "Web_10",
+   "zone": "Web",
+   "index": 10,
+   "kind": "workstation",
+   "row": 1,
+   "column": 3,
+   "box_px": [
+    718,
+    406,
+    129,
+    155
+   ],
+   "sort_y_px": 523.8022,
+   "camera_depth_m": 43.018051,
+   "footprint": {
+    "center_world": [
+     -6.3,
+     3.42
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_10.png",
+     "box_px": [
+      718,
+      406,
+      129,
+      155
+     ],
+     "bytes": 23908
+    },
+    "screen": {
+     "file": "Web_10_screen.png",
+     "box_px": [
+      737,
+      406,
+      60,
+      62
+     ],
+     "bytes": 6617
+    },
+    "led": {
+     "file": "Web_10_led.png",
+     "box_px": [
+      759,
+      413,
+      88,
+      112
+     ],
+     "bytes": 14761
+    }
+   },
+   "fit_residual": 1.07
+  },
+  {
+   "id": "Web_11",
+   "zone": "Web",
+   "index": 11,
+   "kind": "workstation",
+   "row": 1,
+   "column": 4,
+   "box_px": [
+    799,
+    312,
+    129,
+    155
+   ],
+   "sort_y_px": 429.7715,
+   "camera_depth_m": 44.159119,
+   "footprint": {
+    "center_world": [
+     -6.3,
+     5.06
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_11.png",
+     "box_px": [
+      799,
+      312,
+      129,
+      155
+     ],
+     "bytes": 23819
+    },
+    "screen": {
+     "file": "Web_11_screen.png",
+     "box_px": [
+      818,
+      312,
+      60,
+      62
+     ],
+     "bytes": 6556
+    },
+    "led": {
+     "file": "Web_11_led.png",
+     "box_px": [
+      841,
+      319,
+      87,
+      112
+     ],
+     "bytes": 14541
+    }
+   },
+   "fit_residual": 1.0
+  },
+  {
+   "id": "Web_12",
+   "zone": "Web",
+   "index": 12,
+   "kind": "workstation",
+   "row": 1,
+   "column": 5,
+   "box_px": [
+    880,
+    218,
+    130,
+    155
+   ],
+   "sort_y_px": 335.7409,
+   "camera_depth_m": 45.300186,
+   "footprint": {
+    "center_world": [
+     -6.3,
+     6.7
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Web_12.png",
+     "box_px": [
+      880,
+      218,
+      130,
+      155
+     ],
+     "bytes": 23672
+    },
+    "screen": {
+     "file": "Web_12_screen.png",
+     "box_px": [
+      899,
+      218,
+      60,
+      62
+     ],
+     "bytes": 6520
+    },
+    "led": {
+     "file": "Web_12_led.png",
+     "box_px": [
+      922,
+      225,
+      88,
+      112
+     ],
+     "bytes": 14694
+    }
+   },
+   "fit_residual": 1.04
+  },
+  {
+   "id": "Ops_1",
+   "zone": "Ops",
+   "index": 1,
+   "kind": "workstation",
+   "row": 0,
+   "column": 0,
+   "box_px": [
+    810,
+    792,
+    124,
+    162
+   ],
+   "sort_y_px": 915.6436,
+   "camera_depth_m": 38.263039,
+   "footprint": {
+    "center_world": [
+     -2.7,
+     -1.5
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_1.png",
+     "box_px": [
+      810,
+      792,
+      124,
+      162
+     ],
+     "bytes": 24348
+    },
+    "screen": {
+     "file": "Ops_1_screen.png",
+     "box_px": [
+      860,
+      810,
+      60,
+      53
+     ],
+     "bytes": 6752
+    },
+    "led": {
+     "file": "Ops_1_led.png",
+     "box_px": [
+      810,
+      792,
+      87,
+      104
+     ],
+     "bytes": 13084
+    }
+   },
+   "fit_residual": 1.33
+  },
+  {
+   "id": "Ops_2",
+   "zone": "Ops",
+   "index": 2,
+   "kind": "workstation",
+   "row": 0,
+   "column": 1,
+   "box_px": [
+    891,
+    704,
+    125,
+    138
+   ],
+   "sort_y_px": 821.613,
+   "camera_depth_m": 39.404102,
+   "footprint": {
+    "center_world": [
+     -2.7,
+     0.14
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_2.png",
+     "box_px": [
+      891,
+      704,
+      125,
+      138
+     ],
+     "bytes": 21865
+    },
+    "screen": {
+     "file": "Ops_2_screen.png",
+     "box_px": [
+      941,
+      716,
+      61,
+      53
+     ],
+     "bytes": 6707
+    },
+    "led": {
+     "file": "Ops_2_led.png",
+     "box_px": [
+      891,
+      704,
+      88,
+      98
+     ],
+     "bytes": 12859
+    }
+   },
+   "fit_residual": 1.3
+  },
+  {
+   "id": "Ops_3",
+   "zone": "Ops",
+   "index": 3,
+   "kind": "workstation",
+   "row": 0,
+   "column": 2,
+   "box_px": [
+    972,
+    604,
+    125,
+    145
+   ],
+   "sort_y_px": 727.5824,
+   "camera_depth_m": 40.54517,
+   "footprint": {
+    "center_world": [
+     -2.7,
+     1.78
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_3.png",
+     "box_px": [
+      972,
+      604,
+      125,
+      145
+     ],
+     "bytes": 22423
+    },
+    "screen": {
+     "file": "Ops_3_screen.png",
+     "box_px": [
+      1022,
+      622,
+      61,
+      53
+     ],
+     "bytes": 6890
+    },
+    "led": {
+     "file": "Ops_3_led.png",
+     "box_px": [
+      972,
+      604,
+      88,
+      104
+     ],
+     "bytes": 12990
+    }
+   },
+   "fit_residual": 1.45
+  },
+  {
+   "id": "Ops_4",
+   "zone": "Ops",
+   "index": 4,
+   "kind": "workstation",
+   "row": 0,
+   "column": 3,
+   "box_px": [
+    1053,
+    525,
+    125,
+    129
+   ],
+   "sort_y_px": 633.5517,
+   "camera_depth_m": 41.686237,
+   "footprint": {
+    "center_world": [
+     -2.7,
+     3.42
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_4.png",
+     "box_px": [
+      1053,
+      525,
+      125,
+      129
+     ],
+     "bytes": 20854
+    },
+    "screen": {
+     "file": "Ops_4_screen.png",
+     "box_px": [
+      1103,
+      528,
+      61,
+      53
+     ],
+     "bytes": 6594
+    },
+    "led": {
+     "file": "Ops_4_led.png",
+     "box_px": [
+      1053,
+      525,
+      88,
+      89
+     ],
+     "bytes": 11851
+    }
+   },
+   "fit_residual": 1.21
+  },
+  {
+   "id": "Ops_5",
+   "zone": "Ops",
+   "index": 5,
+   "kind": "workstation",
+   "row": 0,
+   "column": 4,
+   "box_px": [
+    1135,
+    416,
+    124,
+    145
+   ],
+   "sort_y_px": 539.521,
+   "camera_depth_m": 42.827305,
+   "footprint": {
+    "center_world": [
+     -2.7,
+     5.06
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_5.png",
+     "box_px": [
+      1135,
+      416,
+      124,
+      145
+     ],
+     "bytes": 22636
+    },
+    "screen": {
+     "file": "Ops_5_screen.png",
+     "box_px": [
+      1185,
+      434,
+      60,
+      53
+     ],
+     "bytes": 6719
+    },
+    "led": {
+     "file": "Ops_5_led.png",
+     "box_px": [
+      1135,
+      416,
+      87,
+      104
+     ],
+     "bytes": 13098
+    }
+   },
+   "fit_residual": 1.42
+  },
+  {
+   "id": "Ops_6",
+   "zone": "Ops",
+   "index": 6,
+   "kind": "workstation",
+   "row": 0,
+   "column": 5,
+   "box_px": [
+    1216,
+    339,
+    124,
+    127
+   ],
+   "sort_y_px": 445.4904,
+   "camera_depth_m": 43.968369,
+   "footprint": {
+    "center_world": [
+     -2.7,
+     6.7
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_6.png",
+     "box_px": [
+      1216,
+      339,
+      124,
+      127
+     ],
+     "bytes": 20749
+    },
+    "screen": {
+     "file": "Ops_6_screen.png",
+     "box_px": [
+      1266,
+      340,
+      60,
+      53
+     ],
+     "bytes": 6489
+    },
+    "led": {
+     "file": "Ops_6_led.png",
+     "box_px": [
+      1216,
+      339,
+      88,
+      87
+     ],
+     "bytes": 12180
+    }
+   },
+   "fit_residual": 1.28
+  },
+  {
+   "id": "Ops_7",
+   "zone": "Ops",
+   "index": 7,
+   "kind": "workstation",
+   "row": 1,
+   "column": 0,
+   "box_px": [
+    894,
+    826,
+    129,
+    154
+   ],
+   "sort_y_px": 943.081,
+   "camera_depth_m": 37.930084,
+   "footprint": {
+    "center_world": [
+     -1.8,
+     -1.5
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_7.png",
+     "box_px": [
+      894,
+      826,
+      129,
+      154
+     ],
+     "bytes": 24690
+    },
+    "screen": {
+     "file": "Ops_7_screen.png",
+     "box_px": [
+      912,
+      826,
+      61,
+      61
+     ],
+     "bytes": 6551
+    },
+    "led": {
+     "file": "Ops_7_led.png",
+     "box_px": [
+      935,
+      833,
+      88,
+      112
+     ],
+     "bytes": 15028
+    }
+   },
+   "fit_residual": 1.28
+  },
+  {
+   "id": "Ops_8",
+   "zone": "Ops",
+   "index": 8,
+   "kind": "workstation",
+   "row": 1,
+   "column": 1,
+   "box_px": [
+    975,
+    732,
+    129,
+    154
+   ],
+   "sort_y_px": 849.0503,
+   "camera_depth_m": 39.071152,
+   "footprint": {
+    "center_world": [
+     -1.8,
+     0.14
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_8.png",
+     "box_px": [
+      975,
+      732,
+      129,
+      154
+     ],
+     "bytes": 23631
+    },
+    "screen": {
+     "file": "Ops_8_screen.png",
+     "box_px": [
+      993,
+      732,
+      61,
+      61
+     ],
+     "bytes": 6645
+    },
+    "led": {
+     "file": "Ops_8_led.png",
+     "box_px": [
+      1016,
+      738,
+      88,
+      113
+     ],
+     "bytes": 14589
+    }
+   },
+   "fit_residual": 1.07
+  },
+  {
+   "id": "Ops_9",
+   "zone": "Ops",
+   "index": 9,
+   "kind": "workstation",
+   "row": 1,
+   "column": 2,
+   "box_px": [
+    1056,
+    638,
+    129,
+    154
+   ],
+   "sort_y_px": 755.0197,
+   "camera_depth_m": 40.212215,
+   "footprint": {
+    "center_world": [
+     -1.8,
+     1.78
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_9.png",
+     "box_px": [
+      1056,
+      638,
+      129,
+      154
+     ],
+     "bytes": 23624
+    },
+    "screen": {
+     "file": "Ops_9_screen.png",
+     "box_px": [
+      1074,
+      638,
+      61,
+      61
+     ],
+     "bytes": 6568
+    },
+    "led": {
+     "file": "Ops_9_led.png",
+     "box_px": [
+      1097,
+      644,
+      88,
+      112
+     ],
+     "bytes": 14531
+    }
+   },
+   "fit_residual": 1.05
+  },
+  {
+   "id": "Ops_10",
+   "zone": "Ops",
+   "index": 10,
+   "kind": "workstation",
+   "row": 1,
+   "column": 3,
+   "box_px": [
+    1137,
+    544,
+    129,
+    154
+   ],
+   "sort_y_px": 660.9891,
+   "camera_depth_m": 41.353283,
+   "footprint": {
+    "center_world": [
+     -1.8,
+     3.42
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_10.png",
+     "box_px": [
+      1137,
+      544,
+      129,
+      154
+     ],
+     "bytes": 24012
+    },
+    "screen": {
+     "file": "Ops_10_screen.png",
+     "box_px": [
+      1156,
+      544,
+      60,
+      61
+     ],
+     "bytes": 6570
+    },
+    "led": {
+     "file": "Ops_10_led.png",
+     "box_px": [
+      1179,
+      550,
+      87,
+      112
+     ],
+     "bytes": 14894
+    }
+   },
+   "fit_residual": 1.07
+  },
+  {
+   "id": "Ops_11",
+   "zone": "Ops",
+   "index": 11,
+   "kind": "workstation",
+   "row": 1,
+   "column": 4,
+   "box_px": [
+    1218,
+    450,
+    129,
+    154
+   ],
+   "sort_y_px": 566.9583,
+   "camera_depth_m": 42.49435,
+   "footprint": {
+    "center_world": [
+     -1.8,
+     5.06
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_11.png",
+     "box_px": [
+      1218,
+      450,
+      129,
+      154
+     ],
+     "bytes": 23577
+    },
+    "screen": {
+     "file": "Ops_11_screen.png",
+     "box_px": [
+      1237,
+      450,
+      60,
+      61
+     ],
+     "bytes": 6516
+    },
+    "led": {
+     "file": "Ops_11_led.png",
+     "box_px": [
+      1260,
+      456,
+      87,
+      112
+     ],
+     "bytes": 14670
+    }
+   },
+   "fit_residual": 1.03
+  },
+  {
+   "id": "Ops_12",
+   "zone": "Ops",
+   "index": 12,
+   "kind": "workstation",
+   "row": 1,
+   "column": 5,
+   "box_px": [
+    1300,
+    356,
+    129,
+    154
+   ],
+   "sort_y_px": 472.9278,
+   "camera_depth_m": 43.635418,
+   "footprint": {
+    "center_world": [
+     -1.8,
+     6.7
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Ops_12.png",
+     "box_px": [
+      1300,
+      356,
+      129,
+      154
+     ],
+     "bytes": 23776
+    },
+    "screen": {
+     "file": "Ops_12_screen.png",
+     "box_px": [
+      1318,
+      356,
+      61,
+      61
+     ],
+     "bytes": 6769
+    },
+    "led": {
+     "file": "Ops_12_led.png",
+     "box_px": [
+      1341,
+      362,
+      88,
+      112
+     ],
+     "bytes": 14856
+    }
+   },
+   "fit_residual": 1.03
+  },
+  {
+   "id": "AI_1",
+   "zone": "AI",
+   "index": 1,
+   "kind": "workstation",
+   "row": 0,
+   "column": 0,
+   "box_px": [
+    1229,
+    929,
+    125,
+    162
+   ],
+   "sort_y_px": 1052.8305,
+   "camera_depth_m": 36.59827,
+   "footprint": {
+    "center_world": [
+     1.8,
+     -1.5
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_1.png",
+     "box_px": [
+      1229,
+      929,
+      125,
+      162
+     ],
+     "bytes": 24344
+    },
+    "screen": {
+     "file": "AI_1_screen.png",
+     "box_px": [
+      1279,
+      947,
+      60,
+      53
+     ],
+     "bytes": 6799
+    },
+    "led": {
+     "file": "AI_1_led.png",
+     "box_px": [
+      1229,
+      929,
+      88,
+      104
+     ],
+     "bytes": 13050
+    }
+   },
+   "fit_residual": 1.36
+  },
+  {
+   "id": "AI_2",
+   "zone": "AI",
+   "index": 2,
+   "kind": "workstation",
+   "row": 0,
+   "column": 1,
+   "box_px": [
+    1310,
+    853,
+    124,
+    127
+   ],
+   "sort_y_px": 958.7998,
+   "camera_depth_m": 37.739334,
+   "footprint": {
+    "center_world": [
+     1.8,
+     0.14
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_2.png",
+     "box_px": [
+      1310,
+      853,
+      124,
+      127
+     ],
+     "bytes": 20884
+    },
+    "screen": {
+     "file": "AI_2_screen.png",
+     "box_px": [
+      1360,
+      853,
+      61,
+      53
+     ],
+     "bytes": 6539
+    },
+    "led": {
+     "file": "AI_2_led.png",
+     "box_px": [
+      1310,
+      853,
+      88,
+      86
+     ],
+     "bytes": 12028
+    }
+   },
+   "fit_residual": 1.31
+  },
+  {
+   "id": "AI_3",
+   "zone": "AI",
+   "index": 3,
+   "kind": "workstation",
+   "row": 0,
+   "column": 2,
+   "box_px": [
+    1391,
+    741,
+    124,
+    145
+   ],
+   "sort_y_px": 864.7692,
+   "camera_depth_m": 38.880402,
+   "footprint": {
+    "center_world": [
+     1.8,
+     1.78
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_3.png",
+     "box_px": [
+      1391,
+      741,
+      124,
+      145
+     ],
+     "bytes": 22621
+    },
+    "screen": {
+     "file": "AI_3_screen.png",
+     "box_px": [
+      1441,
+      759,
+      61,
+      53
+     ],
+     "bytes": 6845
+    },
+    "led": {
+     "file": "AI_3_led.png",
+     "box_px": [
+      1391,
+      741,
+      88,
+      104
+     ],
+     "bytes": 13011
+    }
+   },
+   "fit_residual": 1.47
+  },
+  {
+   "id": "AI_4",
+   "zone": "AI",
+   "index": 4,
+   "kind": "workstation",
+   "row": 0,
+   "column": 3,
+   "box_px": [
+    1473,
+    653,
+    124,
+    138
+   ],
+   "sort_y_px": 770.7385,
+   "camera_depth_m": 40.021469,
+   "footprint": {
+    "center_world": [
+     1.8,
+     3.42
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_4.png",
+     "box_px": [
+      1473,
+      653,
+      124,
+      138
+     ],
+     "bytes": 21795
+    },
+    "screen": {
+     "file": "AI_4_screen.png",
+     "box_px": [
+      1523,
+      665,
+      60,
+      53
+     ],
+     "bytes": 6647
+    },
+    "led": {
+     "file": "AI_4_led.png",
+     "box_px": [
+      1473,
+      653,
+      87,
+      98
+     ],
+     "bytes": 12681
+    }
+   },
+   "fit_residual": 1.3
+  },
+  {
+   "id": "AI_5",
+   "zone": "AI",
+   "index": 5,
+   "kind": "workstation",
+   "row": 0,
+   "column": 4,
+   "box_px": [
+    1553,
+    553,
+    125,
+    145
+   ],
+   "sort_y_px": 676.7078,
+   "camera_depth_m": 41.162533,
+   "footprint": {
+    "center_world": [
+     1.8,
+     5.06
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_5.png",
+     "box_px": [
+      1553,
+      553,
+      125,
+      145
+     ],
+     "bytes": 22459
+    },
+    "screen": {
+     "file": "AI_5_screen.png",
+     "box_px": [
+      1604,
+      571,
+      60,
+      53
+     ],
+     "bytes": 6804
+    },
+    "led": {
+     "file": "AI_5_led.png",
+     "box_px": [
+      1553,
+      553,
+      88,
+      104
+     ],
+     "bytes": 12768
+    }
+   },
+   "fit_residual": 1.42
+  },
+  {
+   "id": "AI_6",
+   "zone": "AI",
+   "index": 6,
+   "kind": "workstation",
+   "row": 0,
+   "column": 5,
+   "box_px": [
+    1635,
+    475,
+    124,
+    128
+   ],
+   "sort_y_px": 582.6773,
+   "camera_depth_m": 42.3036,
+   "footprint": {
+    "center_world": [
+     1.8,
+     6.7
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_6.png",
+     "box_px": [
+      1635,
+      475,
+      124,
+      128
+     ],
+     "bytes": 20706
+    },
+    "screen": {
+     "file": "AI_6_screen.png",
+     "box_px": [
+      1685,
+      477,
+      60,
+      53
+     ],
+     "bytes": 6516
+    },
+    "led": {
+     "file": "AI_6_led.png",
+     "box_px": [
+      1635,
+      475,
+      88,
+      88
+     ],
+     "bytes": 12014
+    }
+   },
+   "fit_residual": 1.26
+  },
+  {
+   "id": "AI_7",
+   "zone": "AI",
+   "index": 7,
+   "kind": "workstation",
+   "row": 1,
+   "column": 0,
+   "box_px": [
+    1313,
+    963,
+    129,
+    154
+   ],
+   "sort_y_px": 1080.2679,
+   "camera_depth_m": 36.265316,
+   "footprint": {
+    "center_world": [
+     2.7,
+     -1.5
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_7.png",
+     "box_px": [
+      1313,
+      963,
+      129,
+      154
+     ],
+     "bytes": 25014
+    },
+    "screen": {
+     "file": "AI_7_screen.png",
+     "box_px": [
+      1331,
+      963,
+      61,
+      61
+     ],
+     "bytes": 6432
+    },
+    "led": {
+     "file": "AI_7_led.png",
+     "box_px": [
+      1354,
+      970,
+      88,
+      112
+     ],
+     "bytes": 15406
+    }
+   },
+   "fit_residual": 1.27
+  },
+  {
+   "id": "AI_8",
+   "zone": "AI",
+   "index": 8,
+   "kind": "workstation",
+   "row": 1,
+   "column": 1,
+   "box_px": [
+    1394,
+    869,
+    129,
+    154
+   ],
+   "sort_y_px": 986.2372,
+   "camera_depth_m": 37.40638,
+   "footprint": {
+    "center_world": [
+     2.7,
+     0.14
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_8.png",
+     "box_px": [
+      1394,
+      869,
+      129,
+      154
+     ],
+     "bytes": 23681
+    },
+    "screen": {
+     "file": "AI_8_screen.png",
+     "box_px": [
+      1412,
+      869,
+      61,
+      61
+     ],
+     "bytes": 6632
+    },
+    "led": {
+     "file": "AI_8_led.png",
+     "box_px": [
+      1435,
+      876,
+      88,
+      112
+     ],
+     "bytes": 14668
+    }
+   },
+   "fit_residual": 1.03
+  },
+  {
+   "id": "AI_9",
+   "zone": "AI",
+   "index": 9,
+   "kind": "workstation",
+   "row": 1,
+   "column": 2,
+   "box_px": [
+    1475,
+    775,
+    129,
+    154
+   ],
+   "sort_y_px": 892.2065,
+   "camera_depth_m": 38.547447,
+   "footprint": {
+    "center_world": [
+     2.7,
+     1.78
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_9.png",
+     "box_px": [
+      1475,
+      775,
+      129,
+      154
+     ],
+     "bytes": 23586
+    },
+    "screen": {
+     "file": "AI_9_screen.png",
+     "box_px": [
+      1494,
+      775,
+      60,
+      61
+     ],
+     "bytes": 6580
+    },
+    "led": {
+     "file": "AI_9_led.png",
+     "box_px": [
+      1516,
+      782,
+      88,
+      112
+     ],
+     "bytes": 14727
+    }
+   },
+   "fit_residual": 1.06
+  },
+  {
+   "id": "AI_10",
+   "zone": "AI",
+   "index": 10,
+   "kind": "workstation",
+   "row": 1,
+   "column": 3,
+   "box_px": [
+    1556,
+    681,
+    129,
+    154
+   ],
+   "sort_y_px": 798.1759,
+   "camera_depth_m": 39.688515,
+   "footprint": {
+    "center_world": [
+     2.7,
+     3.42
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_10.png",
+     "box_px": [
+      1556,
+      681,
+      129,
+      154
+     ],
+     "bytes": 23789
+    },
+    "screen": {
+     "file": "AI_10_screen.png",
+     "box_px": [
+      1575,
+      681,
+      60,
+      61
+     ],
+     "bytes": 6540
+    },
+    "led": {
+     "file": "AI_10_led.png",
+     "box_px": [
+      1598,
+      688,
+      87,
+      112
+     ],
+     "bytes": 14580
+    }
+   },
+   "fit_residual": 1.05
+  },
+  {
+   "id": "AI_11",
+   "zone": "AI",
+   "index": 11,
+   "kind": "workstation",
+   "row": 1,
+   "column": 4,
+   "box_px": [
+    1637,
+    587,
+    129,
+    154
+   ],
+   "sort_y_px": 704.1452,
+   "camera_depth_m": 40.829582,
+   "footprint": {
+    "center_world": [
+     2.7,
+     5.06
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_11.png",
+     "box_px": [
+      1637,
+      587,
+      129,
+      154
+     ],
+     "bytes": 23677
+    },
+    "screen": {
+     "file": "AI_11_screen.png",
+     "box_px": [
+      1656,
+      587,
+      60,
+      61
+     ],
+     "bytes": 6487
+    },
+    "led": {
+     "file": "AI_11_led.png",
+     "box_px": [
+      1679,
+      594,
+      87,
+      112
+     ],
+     "bytes": 14593
+    }
+   },
+   "fit_residual": 1.03
+  },
+  {
+   "id": "AI_12",
+   "zone": "AI",
+   "index": 12,
+   "kind": "workstation",
+   "row": 1,
+   "column": 5,
+   "box_px": [
+    1719,
+    493,
+    129,
+    154
+   ],
+   "sort_y_px": 610.1146,
+   "camera_depth_m": 41.970646,
+   "footprint": {
+    "center_world": [
+     2.7,
+     6.7
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "AI_12.png",
+     "box_px": [
+      1719,
+      493,
+      129,
+      154
+     ],
+     "bytes": 23946
+    },
+    "screen": {
+     "file": "AI_12_screen.png",
+     "box_px": [
+      1737,
+      493,
+      61,
+      61
+     ],
+     "bytes": 6674
+    },
+    "led": {
+     "file": "AI_12_led.png",
+     "box_px": [
+      1760,
+      500,
+      88,
+      112
+     ],
+     "bytes": 15036
+    }
+   },
+   "fit_residual": 1.06
+  },
+  {
+   "id": "Home_1",
+   "zone": "Home",
+   "index": 1,
+   "kind": "workstation",
+   "row": 0,
+   "column": 0,
+   "box_px": [
+    1648,
+    1066,
+    125,
+    162
+   ],
+   "sort_y_px": 1190.0173,
+   "camera_depth_m": 34.933498,
+   "footprint": {
+    "center_world": [
+     6.3,
+     -1.5
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_1.png",
+     "box_px": [
+      1648,
+      1066,
+      125,
+      162
+     ],
+     "bytes": 24464
+    },
+    "screen": {
+     "file": "Home_1_screen.png",
+     "box_px": [
+      1698,
+      1084,
+      61,
+      54
+     ],
+     "bytes": 7042
+    },
+    "led": {
+     "file": "Home_1_led.png",
+     "box_px": [
+      1648,
+      1066,
+      88,
+      105
+     ],
+     "bytes": 13296
+    }
+   },
+   "fit_residual": 1.42
+  },
+  {
+   "id": "Home_2",
+   "zone": "Home",
+   "index": 2,
+   "kind": "workstation",
+   "row": 0,
+   "column": 1,
+   "box_px": [
+    1729,
+    990,
+    125,
+    127
+   ],
+   "sort_y_px": 1095.9867,
+   "camera_depth_m": 36.074566,
+   "footprint": {
+    "center_world": [
+     6.3,
+     0.14
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_2.png",
+     "box_px": [
+      1729,
+      990,
+      125,
+      127
+     ],
+     "bytes": 20983
+    },
+    "screen": {
+     "file": "Home_2_screen.png",
+     "box_px": [
+      1779,
+      990,
+      61,
+      54
+     ],
+     "bytes": 6859
+    },
+    "led": {
+     "file": "Home_2_led.png",
+     "box_px": [
+      1729,
+      990,
+      88,
+      87
+     ],
+     "bytes": 12060
+    }
+   },
+   "fit_residual": 1.3
+  },
+  {
+   "id": "Home_3",
+   "zone": "Home",
+   "index": 3,
+   "kind": "workstation",
+   "row": 0,
+   "column": 2,
+   "box_px": [
+    1810,
+    878,
+    125,
+    145
+   ],
+   "sort_y_px": 1001.956,
+   "camera_depth_m": 37.215633,
+   "footprint": {
+    "center_world": [
+     6.3,
+     1.78
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_3.png",
+     "box_px": [
+      1810,
+      878,
+      125,
+      145
+     ],
+     "bytes": 22728
+    },
+    "screen": {
+     "file": "Home_3_screen.png",
+     "box_px": [
+      1860,
+      896,
+      61,
+      54
+     ],
+     "bytes": 6994
+    },
+    "led": {
+     "file": "Home_3_led.png",
+     "box_px": [
+      1810,
+      878,
+      88,
+      105
+     ],
+     "bytes": 13026
+    }
+   },
+   "fit_residual": 1.45
+  },
+  {
+   "id": "Home_4",
+   "zone": "Home",
+   "index": 4,
+   "kind": "workstation",
+   "row": 0,
+   "column": 3,
+   "box_px": [
+    1892,
+    802,
+    124,
+    127
+   ],
+   "sort_y_px": 907.9254,
+   "camera_depth_m": 38.356697,
+   "footprint": {
+    "center_world": [
+     6.3,
+     3.42
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_4.png",
+     "box_px": [
+      1892,
+      802,
+      124,
+      127
+     ],
+     "bytes": 20941
+    },
+    "screen": {
+     "file": "Home_4_screen.png",
+     "box_px": [
+      1942,
+      802,
+      60,
+      53
+     ],
+     "bytes": 6446
+    },
+    "led": {
+     "file": "Home_4_led.png",
+     "box_px": [
+      1892,
+      802,
+      87,
+      87
+     ],
+     "bytes": 12062
+    }
+   },
+   "fit_residual": 1.3
+  },
+  {
+   "id": "Home_5",
+   "zone": "Home",
+   "index": 5,
+   "kind": "workstation",
+   "row": 0,
+   "column": 4,
+   "box_px": [
+    1973,
+    690,
+    124,
+    145
+   ],
+   "sort_y_px": 813.8947,
+   "camera_depth_m": 39.497765,
+   "footprint": {
+    "center_world": [
+     6.3,
+     5.06
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_5.png",
+     "box_px": [
+      1973,
+      690,
+      124,
+      145
+     ],
+     "bytes": 22772
+    },
+    "screen": {
+     "file": "Home_5_screen.png",
+     "box_px": [
+      2023,
+      708,
+      60,
+      53
+     ],
+     "bytes": 6813
+    },
+    "led": {
+     "file": "Home_5_led.png",
+     "box_px": [
+      1973,
+      690,
+      87,
+      104
+     ],
+     "bytes": 12976
+    }
+   },
+   "fit_residual": 1.49
+  },
+  {
+   "id": "Home_6",
+   "zone": "Home",
+   "index": 6,
+   "kind": "workstation",
+   "row": 0,
+   "column": 5,
+   "box_px": [
+    2054,
+    602,
+    125,
+    139
+   ],
+   "sort_y_px": 719.8641,
+   "camera_depth_m": 40.638832,
+   "footprint": {
+    "center_world": [
+     6.3,
+     6.7
+    ],
+    "yaw_rad": 4.712389,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_6.png",
+     "box_px": [
+      2054,
+      602,
+      125,
+      139
+     ],
+     "bytes": 21964
+    },
+    "screen": {
+     "file": "Home_6_screen.png",
+     "box_px": [
+      2104,
+      614,
+      61,
+      53
+     ],
+     "bytes": 6772
+    },
+    "led": {
+     "file": "Home_6_led.png",
+     "box_px": [
+      2054,
+      602,
+      88,
+      98
+     ],
+     "bytes": 12968
+    }
+   },
+   "fit_residual": 1.35
+  },
+  {
+   "id": "Home_7",
+   "zone": "Home",
+   "index": 7,
+   "kind": "workstation",
+   "row": 1,
+   "column": 0,
+   "box_px": [
+    1732,
+    1100,
+    129,
+    155
+   ],
+   "sort_y_px": 1217.4547,
+   "camera_depth_m": 34.600544,
+   "footprint": {
+    "center_world": [
+     7.2,
+     -1.5
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_7.png",
+     "box_px": [
+      1732,
+      1100,
+      129,
+      155
+     ],
+     "bytes": 24771
+    },
+    "screen": {
+     "file": "Home_7_screen.png",
+     "box_px": [
+      1750,
+      1100,
+      61,
+      61
+     ],
+     "bytes": 6530
+    },
+    "led": {
+     "file": "Home_7_led.png",
+     "box_px": [
+      1773,
+      1107,
+      88,
+      112
+     ],
+     "bytes": 15196
+    }
+   },
+   "fit_residual": 1.25
+  },
+  {
+   "id": "Home_8",
+   "zone": "Home",
+   "index": 8,
+   "kind": "workstation",
+   "row": 1,
+   "column": 1,
+   "box_px": [
+    1813,
+    1006,
+    129,
+    154
+   ],
+   "sort_y_px": 1123.4241,
+   "camera_depth_m": 35.741611,
+   "footprint": {
+    "center_world": [
+     7.2,
+     0.14
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_8.png",
+     "box_px": [
+      1813,
+      1006,
+      129,
+      154
+     ],
+     "bytes": 23761
+    },
+    "screen": {
+     "file": "Home_8_screen.png",
+     "box_px": [
+      1831,
+      1006,
+      61,
+      61
+     ],
+     "bytes": 6609
+    },
+    "led": {
+     "file": "Home_8_led.png",
+     "box_px": [
+      1854,
+      1013,
+      88,
+      112
+     ],
+     "bytes": 14818
+    }
+   },
+   "fit_residual": 1.06
+  },
+  {
+   "id": "Home_9",
+   "zone": "Home",
+   "index": 9,
+   "kind": "workstation",
+   "row": 1,
+   "column": 2,
+   "box_px": [
+    1894,
+    912,
+    129,
+    155
+   ],
+   "sort_y_px": 1029.3934,
+   "camera_depth_m": 36.882679,
+   "footprint": {
+    "center_world": [
+     7.2,
+     1.78
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_9.png",
+     "box_px": [
+      1894,
+      912,
+      129,
+      155
+     ],
+     "bytes": 24005
+    },
+    "screen": {
+     "file": "Home_9_screen.png",
+     "box_px": [
+      1913,
+      912,
+      60,
+      61
+     ],
+     "bytes": 6598
+    },
+    "led": {
+     "file": "Home_9_led.png",
+     "box_px": [
+      1935,
+      919,
+      88,
+      112
+     ],
+     "bytes": 15169
+    }
+   },
+   "fit_residual": 1.04
+  },
+  {
+   "id": "Home_10",
+   "zone": "Home",
+   "index": 10,
+   "kind": "workstation",
+   "row": 1,
+   "column": 3,
+   "box_px": [
+    1976,
+    818,
+    129,
+    155
+   ],
+   "sort_y_px": 935.3627,
+   "camera_depth_m": 38.023746,
+   "footprint": {
+    "center_world": [
+     7.2,
+     3.42
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_10.png",
+     "box_px": [
+      1976,
+      818,
+      129,
+      155
+     ],
+     "bytes": 23908
+    },
+    "screen": {
+     "file": "Home_10_screen.png",
+     "box_px": [
+      1994,
+      818,
+      60,
+      61
+     ],
+     "bytes": 6577
+    },
+    "led": {
+     "file": "Home_10_led.png",
+     "box_px": [
+      2017,
+      825,
+      88,
+      112
+     ],
+     "bytes": 14865
+    }
+   },
+   "fit_residual": 1.06
+  },
+  {
+   "id": "Home_11",
+   "zone": "Home",
+   "index": 11,
+   "kind": "workstation",
+   "row": 1,
+   "column": 4,
+   "box_px": [
+    2056,
+    724,
+    129,
+    154
+   ],
+   "sort_y_px": 841.3321,
+   "camera_depth_m": 39.16481,
+   "footprint": {
+    "center_world": [
+     7.2,
+     5.06
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_11.png",
+     "box_px": [
+      2056,
+      724,
+      129,
+      154
+     ],
+     "bytes": 23743
+    },
+    "screen": {
+     "file": "Home_11_screen.png",
+     "box_px": [
+      2075,
+      724,
+      60,
+      61
+     ],
+     "bytes": 6646
+    },
+    "led": {
+     "file": "Home_11_led.png",
+     "box_px": [
+      2098,
+      731,
+      87,
+      112
+     ],
+     "bytes": 14911
+    }
+   },
+   "fit_residual": 1.05
+  },
+  {
+   "id": "Home_12",
+   "zone": "Home",
+   "index": 12,
+   "kind": "workstation",
+   "row": 1,
+   "column": 5,
+   "box_px": [
+    2138,
+    630,
+    129,
+    154
+   ],
+   "sort_y_px": 747.3015,
+   "camera_depth_m": 40.305878,
+   "footprint": {
+    "center_world": [
+     7.2,
+     6.7
+    ],
+    "yaw_rad": 1.570796,
+    "local_min_max_m": [
+     -0.6,
+     -0.45,
+     0.6,
+     0.45
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Home_12.png",
+     "box_px": [
+      2138,
+      630,
+      129,
+      154
+     ],
+     "bytes": 23788
+    },
+    "screen": {
+     "file": "Home_12_screen.png",
+     "box_px": [
+      2156,
+      630,
+      61,
+      61
+     ],
+     "bytes": 6709
+    },
+    "led": {
+     "file": "Home_12_led.png",
+     "box_px": [
+      2179,
+      637,
+      88,
+      112
+     ],
+     "bytes": 14862
+    }
+   },
+   "fit_residual": 1.04
+  },
+  {
+   "id": "Boss_1",
+   "zone": "Boss",
+   "index": 1,
+   "kind": "boss",
+   "row": null,
+   "column": null,
+   "box_px": [
+    114,
+    1177,
+    143,
+    227
+   ],
+   "sort_y_px": 1324.4809,
+   "camera_depth_m": 33.301777,
+   "footprint": {
+    "center_world": [
+     -5.52,
+     -10.13
+    ],
+    "yaw_rad": -1.082104,
+    "local_min_max_m": [
+     -1.341,
+     -0.691,
+     1.341,
+     0.691
+    ]
+   },
+   "layers": {
+    "off": {
+     "file": "Boss_1.png",
+     "box_px": [
+      114,
+      1177,
+      143,
+      227
+     ],
+     "bytes": 33121
+    }
+   },
+   "fit_residual": 0.81
+  }
+ ]
+}

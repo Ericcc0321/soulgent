@@ -1,0 +1,55 @@
+# Soulgent web app: api (Python) + caddy (HTTPS on the LAN). The helper runs on the host under launchd (helper/install.sh).
+# Project name is configurable (it determines container and volume names). Set COMPOSE_PROJECT_NAME in .env to keep an existing state volume
+name: ${COMPOSE_PROJECT_NAME:-soulgent}
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    env_file: .env
+    volumes:
+      - ./data:/data:ro
+      - ${HOME}/.claude/projects:/projects:ro
+      - state:/state
+      - ./data/outbox:/outbox
+      - ./data/uploads:/uploads  # Files uploaded from the phone, writable; host dir is mode 700 (set by the helper at startup), Docker Desktop fakeowner lets the container write
+      # Host directories whose attachments can be opened from chat bubbles (mounted read-only at /host/*) are not listed here; put them in the local, private docker-compose.override.yml
+      # (gitignored, merged automatically by docker compose; see docker-compose.override.yml.example)
+    environment:
+      OUTBOX: /outbox
+      UPLOADS: /uploads
+      # The container's HOME is not the host's; `~/` paths expand against this
+      HOST_HOME: ${HOME}
+      # Host path = container path, colon-separated; the last entry is the absolute host path of uploads (${PWD} = running docker compose from the project directory)
+      # Extra directories come from FILE_ROOTS in .env (must match the mounts in the override); FILE_ROOTS set in the override wins
+      FILE_ROOTS: "${FILE_ROOTS:-}:${PWD}/data/uploads=/uploads"
+      # Slash commands guests may send, comma-separated (e.g. /compact); empty = none. Read once at startup
+      GUEST_SLASH_COMMANDS: "${GUEST_SLASH_COMMANDS:-}"
+    mem_limit: 96m
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2.11.7-alpine  # pinned; bump deliberately
+    depends_on:
+      - api
+    ports:
+      - "${SITE_IP}:8443:8443"
+    environment:
+      SITE_HOST: ${SITE_HOST}
+      SITE_IP: ${SITE_IP}
+      # Env vars needed by private proxies (e.g. secrets) go in the local docker-compose.override.yml, not here (see .example)
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      # Private proxy snippets (*.caddy, gitignored), imported by the Caddyfile as private/*.caddy; mounted as a directory so edits need no recreate
+      - ./caddy-private:/etc/caddy/private:ro
+      - ./web:/srv:ro
+      # Pet assets mount at /pets rather than /srv/pets: nesting a mount inside a read-only mount creates an empty directory under the host web/
+      - ./data/pets:/pets:ro
+      - caddy_data:/data
+    mem_limit: 64m
+    restart: unless-stopped
+
+volumes:
+  state:
+  caddy_data:

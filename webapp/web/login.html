@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Soulgent">
+<meta name="theme-color" content="#111111">
+<meta name="color-scheme" content="dark">
+<title data-i18n="login.title">Soulgent · Sign in</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/icon-180.png?v=4">
+<link rel="icon" type="image/svg+xml" href="/icons/favicon.svg?v=1">
+<link rel="icon" type="image/png" href="/icons/icon-192.png?v=4">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; background: #111; }
+  body {
+    color: #f2f3f5; font: 16px/1.4 -apple-system, BlinkMacSystemFont, "PingFang SC", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex; align-items: center; justify-content: center;
+    padding: calc(env(safe-area-inset-top, 0px) + 24px) 24px calc(env(safe-area-inset-bottom, 0px) + 24px);
+    background:
+      radial-gradient(70% 45% at 20% 0%, rgba(80, 128, 208, .2), transparent 70%),
+      radial-gradient(60% 40% at 100% 10%, rgba(255, 107, 94, .12), transparent 70%),
+      #111;
+  }
+  main { width: 100%; max-width: 360px; text-align: center; }
+  /* logo slot swapped for the transparent plush Soulgent flame (no rounded crop, no frame shadow, just a light ground shadow) */
+  img { width: 104px; height: 112px; object-fit: contain; filter: drop-shadow(0 10px 24px rgba(0, 0, 0, .45)); }
+  h1 { font-size: 30px; font-weight: 800; margin: 18px 0 6px; letter-spacing: .5px; }
+  p { color: #9aa0ab; font-size: 14px; line-height: 1.6; margin-bottom: 26px; }
+  form { display: flex; flex-direction: column; gap: 12px; }
+  input {
+    width: 100%; height: 52px; padding: 0 16px; border-radius: 16px; outline: none;
+    background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .1);
+    color: #fff; font: inherit; font-size: 16px; text-align: center; letter-spacing: .5px;
+    transition: border-color .2s, background-color .2s;
+  }
+  input:focus { border-color: #0a84ff; background: rgba(10, 132, 255, .08); }
+  input::placeholder { color: #6b717c; letter-spacing: 0; }
+  button {
+    height: 52px; border: 0; border-radius: 16px; background: #1f8fff; color: #fff;
+    font: inherit; font-weight: 700; font-size: 17px; cursor: pointer; transition: transform .15s, opacity .15s;
+  }
+  button:active { transform: scale(.98); opacity: .85; }
+  button:disabled { opacity: .5; }
+  .err { min-height: 20px; color: #ff6b5e; font-size: 14px; }
+  .shake { animation: shake .35s; }
+  @keyframes shake { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
+  html:not([data-i18n-done]) [data-i18n] { visibility: hidden; } /* hide until switched to the current language, to avoid flashing English */
+  .hint { margin-top: 22px; font-size: 12px; color: #6b717c; line-height: 1.6; }
+  html:lang(zh-TW) body { font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", system-ui, sans-serif; } /* Traditional Chinese glyphs */
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<main>
+  <img src="/icons/mascot-idle.png?v=1" alt="">
+  <h1>Soulgent</h1>
+  <p><span data-i18n="login.first1">First time on this device?</span><br><span data-i18n="login.first2">Paste your access key</span></p>
+  <form id="f" autocomplete="off">
+    <input id="k" type="password" placeholder="Paste key" data-i18n-attr="placeholder:login.ph" autocapitalize="off" autocorrect="off" spellcheck="false" required>
+    <button id="b" type="submit" data-i18n="login.go">Enter</button>
+    <div id="e" class="err" role="alert"></div>
+  </form>
+  <div id="n" class="hint" role="status" hidden></div>
+  <div class="hint"><span data-i18n="login.hint1">No key? Ask your admin.</span><br><span data-i18n="login.hint2">Once verified, it's remembered — no need to enter it again.</span></div>
+</main>
+<script>
+(function () {
+  // Strings and language detection use /i18n.js directly (the gate lets it through), no inline mini table. Dynamic import (no top-level await, so old Safari works);
+  // if it cannot be fetched (in the minute or two when the new page is up but the api is not rebuilt, the gate blocks /i18n.js as unauthenticated) show the English in the HTML, so the page is not left hidden
+  var t = function (k) { return k; };
+  var ready = import("/i18n.js").then(function (m) {
+    t = m.t;
+    m.applyI18n(document); // swap text, set <html lang>, set data-i18n-done (only then is it shown)
+  }).catch(function () {
+    document.documentElement.setAttribute("data-i18n-done", "1");
+  });
+
+  var f = document.getElementById("f");
+  var k = document.getElementById("k");
+  var b = document.getElementById("b");
+  var e = document.getElementById("e");
+  var n = document.getElementById("n");
+  var LEGACY_DELAY_MS = 3000; // legacy ?key= links: keep the "outdated link" notice on screen this long before leaving the page
+  var legacy = false;
+
+  function fail(msg) {
+    e.textContent = msg;
+    f.classList.remove("shake");
+    void f.offsetWidth;
+    f.classList.add("shake");
+  }
+
+  function submit(key, auto) {
+    key = (key || "").trim();
+    if (!key) return;
+    b.disabled = true;
+    b.textContent = t("login.checking");
+    e.textContent = "";
+    fetch("/api/auth", {
+      method: "POST",
+      credentials: "same-origin",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(auto ? { key: key, auto: true } : { key: key })
+    }).then(function (res) {
+      // Login success = identity may have changed: forget the last confirmed account, so an offline start does not fetch an offline snapshot for the old account
+      if (res.ok) { try { localStorage.removeItem("zbs.account"); } catch (er) { /* harmless */ } }
+      var go = function (u) { // after a legacy link, leave time to read the notice
+        if (auto && legacy) setTimeout(function () { location.replace(u); }, LEGACY_DELAY_MS);
+        else location.replace(u);
+      };
+      if (res.status === 204) { go("/"); return; }
+      // Other accounts (guest) return {next}; only same-site paths are accepted
+      if (res.ok) {
+        return res.json().catch(function () { return {}; }).then(function (d) {
+          var next = d && typeof d.next === "string" && /^\/(?!\/)/.test(d.next) ? d.next : "/";
+          go(next);
+        });
+      }
+      // Already logged in as someone else (auto-submitted #k= link): do not switch; the key is prefilled, switching needs a deliberate submit
+      if (res.status === 409 && auto) {
+        k.value = key;
+        e.textContent = t("login.switch");
+        k.focus();
+        return;
+      }
+      fail(res.status === 401 ? t("login.bad")
+        : res.status === 429 ? t("login.tooMany")
+        : t("login.server", { n: res.status }));
+    }).catch(function () {
+      fail(t("login.net"));
+    }).then(function () {
+      b.disabled = false;
+      b.textContent = t("login.go");
+    });
+  }
+
+  f.addEventListener("submit", function (ev) { ev.preventDefault(); submit(k.value, false); });
+
+  // Login link https://<host>:8443/#k=<key> (index.html forwards /#k= here; a logged-out / is redirected here with the fragment kept).
+  // The fragment never reaches the server; drop it from the address bar and history first, then submit by POST as "auto".
+  // legacy=1: the server moved an old ?key= link here (legacy ?key= links, remove after 2026-12-26); show a one-line notice and still log in.
+  var h = location.hash || "";
+  var m = h.match(/^#(?:.*&)?k=([^&]*)/);
+  if (m) {
+    history.replaceState(null, "", location.pathname);
+    var key = "";
+    try { key = decodeURIComponent(m[1]); } catch (er) { key = ""; }
+    legacy = /^#(?:.*&)?legacy=1(?:&|$)/.test(h);
+    ready.then(function () { // submit once the strings are ready (the "Verifying..." on the button must follow the language)
+      if (legacy) { n.textContent = t("login.legacy"); n.hidden = false; }
+      submit(key, true);
+    });
+  }
+})();
+</script>
+</body>
+</html>

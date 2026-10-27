@@ -1,0 +1,59 @@
+/* Common words: only those of the three-language glossary (zh-Hans / zh-Hant / en).
+   Keys not here yet show the simplified original (logged once). */
+
+/* the bottom bar's "Dashboard" */
+"common.dashboard" = "Dashboard";
+"common.session" = "session";
+"common.approve" = "approve";
+"common.blazeMode" = "Blaze Mode";
+"common.unsend" = "Unsend";
+"common.unsent" = "Unsent";
+/* phone only */
+"common.pin" = "Pin";
+/* the defaults key `pinned` is unchanged */
+"common.replyLater" = "Reply later";
+"common.replyLater.remove" = "Remove reply later";
+"common.replyLater.marked" = "Marked reply later";
+"common.replyLater.removed" = "Reply later removed";
+"common.replyLater.order" = "Reply-later ones come after those waiting for you";
+"common.delegating" = "Delegating";
+/* the grouping concept; not the bottom bar's Dashboard label */
+"common.zone" = "Zone";
+"common.mute" = "Mute";
+"common.avatar" = "Avatar";
+"common.nickname" = "Nickname";
+"common.onDuty" = "On duty";
+"common.offDuty" = "Off duty";
+"common.notOnDuty" = "Off duty";
+"common.resting" = "Resting";
+"common.markSeen" = "Mark as seen";
+"common.signedInDevices" = "Signed-in devices";
+/* default nickname */
+"common.guest" = "Guest";
+"common.needsDecision" = "Needs your decision";
+"common.done" = "Done";
+"common.testNotification" = "This is a test notification";
+/* %@ = the other session's name */
+"common.talkingWith" = "Talking with %@";
+"common.agentReport.handled" = "Handled a subagent report";
+/* in progress */
+"common.agentReport.handling" = "Handling a subagent report…";
+"common.contextCompacted" = "Context compacted";
+/* a file name that is empty or missing: both cases read the same */
+"common.approveFileEdit" = "Approve a file edit";
+/* collective name for the figures */
+"common.flame" = "the Soulgent flame";
+/* avatar badge */
+"common.errand" = "Errand";
+/* long form, used when it fits (e.g. the Mac title bar) */
+"common.orcaOnline" = "Orca online";
+/* short form, used in narrow places (e.g. the top of the phone's list); the same in all three languages */
+"common.orcaOnlineShort" = "Orca ✓";
+/* %lld = ordinal number */
+"common.image" = "Image %lld";
+/* its background work has run for hours, likely hung */
+"common.bg.hung" = "Background task may be stuck";
+/* a session's process exited unexpectedly */
+"common.exitedUnexpectedly" = "Exited unexpectedly";
+/* a session with no name of its own; shown only, the name itself stays the Chinese placeholder ("unnamed") in --dump and for matching */
+"common.untitled" = "Untitled";

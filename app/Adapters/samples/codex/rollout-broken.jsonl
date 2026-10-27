@@ -1,0 +1,6 @@
+{"at":"2026-10-20T08:00:00.000Z","kind":"session.meta","data":{"id":"00000000-demo-0000-0000-codex0000001","cwd":"/Users/demo/Projects/demo-garden"}}
+{"at":"2026-10-20T08:00:00.100Z","kind":"turn.context","data":{"model":"gpt-demo-1"}}
+{"at":"2026-10-20T08:00:01.000Z","kind":"turn.started","data":{}}
+{"at":"2026-10-20T08:00:01.100Z","kind":"item","data":{"role":"user","text":"Count the demo apples"}}
+{"at":"2026-10-20T08:00:04.000Z","kind":"item","data":{"role":"assistant","text":"There are twelve demo apples."}}
+{"at":"2026-10-20T08:00:04.500Z","kind":"turn.completed","data":{}}

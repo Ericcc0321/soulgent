@@ -1,0 +1,8 @@
+{
+  "id": "soulflame",
+  "displayName": "Soulgent flame",
+  "description": "The built-in Soulgent flame, used when no Petdex pet is installed.",
+  "spritesheetPath": "spritesheet.webp",
+  "avatar": "whole",
+  "scale": 0.6
+}

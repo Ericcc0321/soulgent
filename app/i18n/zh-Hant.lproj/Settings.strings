@@ -1,0 +1,55 @@
+/* The Settings window and About.
+   Keys not here yet show the simplified original (logged once). */
+
+
+/* ── Settings / menu bar / About / search ── */
+/* window title */
+"title" = "設定";
+"tab.general" = "一般";
+"tab.office" = "辦公室";
+"tab.zone" = "海景房";
+"tab.pets" = "角色";
+"tab.advanced" = "進階";
+"general.language" = "語言";
+"general.language.system" = "跟隨系統";
+/* glossary: "takes effect after restarting Soulgent" (zh wording kept as is) */
+"general.language.restart" = "重新啟動 Soulgent 後生效。";
+"general.textSize" = "文字大小";
+"general.textSize.small" = "小";
+"general.textSize.standard" = "標準";
+"general.textSize.large" = "大";
+"general.textSize.extraLarge" = "特大";
+"general.textSize.note" = "值班室的卡片和標題列會跟著變；辦公室和海景房不受影響。";
+"general.accessibility" = "需要在「系統設定 > 隱私權與安全性 > 輔助使用」裡允許「Soulgent」。打開開關會跳出系統的請求。";
+"general.login" = "開機自動啟動";
+"general.login.managed" = "由 launchd 任務負責，這裡不改";
+"general.login.open" = "開啟 LaunchAgents 資料夾";
+"office.walks" = "辦公室裡走動";
+"office.theme" = "主題";
+"office.background" = "背景色…";
+"office.background.follows" = "背景色跟隨主題";
+"office.background.reset" = "恢復主題的背景色";
+"zone.aura.note" = "Fable 會話的寵物身上的金色光焰。";
+"zone.lightning" = "閃電";
+"zone.lightning.note" = "光焰上的閃電；光效關掉時它也不顯示。";
+"zone.orca" = "虎鯨短片";
+"zone.orca.note" = "窗外海面上偶爾游過的虎鯨。";
+"pets.reshuffle" = "重新分配寵物";
+"pets.reshuffle.button" = "重新分配…";
+"pets.restore" = "恢復";
+"pets.open" = "開啟的會話";
+"pets.none" = "現在沒有開啟的會話。";
+/* %@ = the pet's id, %@ = the size step (+1, 0, -1) */
+"pets.row" = "%@  ·  大小 %@";
+"pets.reshuffle.ask" = "給所有會話重新分配寵物？";
+/* dialog button */
+"pets.reshuffle.confirm" = "重新分配";
+/* dialog button */
+"pets.reshuffle.cancel" = "取消";
+"pets.reshuffle.note" = "每個會話會換一個新的寵物（封鎖的不會再出現）。";
+"advanced.demo" = "示範：訊息飛一次";
+"advanced.demo.button" = "飛一次";
+"advanced.log" = "記錄檔";
+"advanced.log.open" = "開啟記錄檔";
+"advanced.data" = "資料目錄";
+"advanced.data.open" = "開啟資料目錄";

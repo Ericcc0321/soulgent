@@ -1,0 +1,179 @@
+{
+  "clips" : [
+    {
+      "box" : [
+        1560,
+        0,
+        2400,
+        480
+      ],
+      "desc" : "leaps out and catches the gull",
+      "duration_s" : 5,
+      "file" : "A.mov",
+      "fps" : 24,
+      "frames" : 120,
+      "id" : "A",
+      "size" : [
+        840,
+        480
+      ],
+      "start_loop_frame" : 0
+    },
+    {
+      "box" : [
+        460,
+        0,
+        2400,
+        480
+      ],
+      "desc" : "leaps out and misses; the gull escapes",
+      "duration_s" : 5,
+      "file" : "B.mov",
+      "fps" : 24,
+      "frames" : 120,
+      "id" : "B",
+      "size" : [
+        1940,
+        480
+      ],
+      "start_loop_frame" : 0
+    },
+    {
+      "box" : [
+        1624,
+        0,
+        2400,
+        456
+      ],
+      "clear_zone" : [
+        [
+          2210,
+          0,
+          2400,
+          62
+        ],
+        [
+          2050,
+          2,
+          2400,
+          94
+        ],
+        [
+          1986,
+          34,
+          2400,
+          126
+        ],
+        [
+          1922,
+          66,
+          2400,
+          158
+        ],
+        [
+          1850,
+          98,
+          2400,
+          190
+        ],
+        [
+          1778,
+          130,
+          2400,
+          222
+        ],
+        [
+          1738,
+          162,
+          2400,
+          286
+        ],
+        [
+          1738,
+          226,
+          2350,
+          318
+        ],
+        [
+          1754,
+          258,
+          2302,
+          350
+        ],
+        [
+          1786,
+          290,
+          2206,
+          382
+        ],
+        [
+          1850,
+          322,
+          2134,
+          414
+        ]
+      ],
+      "clear_zone_rule" : "alpha >= 240, largest blob a frame on an 8 px grid, 32 px bands, + 30 px (panel\/tools\/orca_clear_zone.swift)",
+      "desc" : "charges diagonally onto the upper-right beach (the surge's water film arrives first), writhes, then slides back to the waterline with the second surge and into the sea",
+      "duration_s" : 10,
+      "file" : "C.mov",
+      "fps" : 24,
+      "frames" : 240,
+      "id" : "C",
+      "size" : [
+        776,
+        456
+      ],
+      "start_loop_frame" : 0,
+      "strike" : {
+        "gull_spots" : [
+          [
+            1782,
+            313
+          ],
+          [
+            1867,
+            320
+          ],
+          [
+            1817,
+            335
+          ]
+        ],
+        "note" : "Gull foot points (base-image pixels), the clip frame at which each takes off, and the orca's approach path (sea to the nose touching the sand); the beach animals flee to either side accordingly",
+        "path" : [
+          [
+            2395,
+            197
+          ],
+          [
+            1790,
+            352
+          ]
+        ],
+        "takeoff_frames" : [
+          36,
+          32,
+          38
+        ]
+      }
+    }
+  ],
+  "fps" : 24,
+  "loop" : {
+    "box" : [
+      460,
+      0,
+      2400,
+      640
+    ],
+    "file" : "outdoor_loop.mov",
+    "fps" : 24,
+    "frames" : 288
+  },
+  "note" : "box = overlay position, in base-image pixel coordinates (2400x1600) [x0,y0,x1,y1] (top-left origin). Video frame k corresponds to sea-loop frame (start_loop_frame + k) % 288; playback must start exactly when the sea loop outdoor_loop.mov reaches frame start_loop_frame (i.e. 0 s), or the waterline and foam will not line up.",
+  "picture" : [
+    2400,
+    1600
+  ]
+}

@@ -1,0 +1,55 @@
+/* The Settings window and About.
+   Keys not here yet show the simplified original (logged once). */
+
+
+/* ── Settings / menu bar / About / search ── */
+/* window title */
+"title" = "Settings";
+"tab.general" = "General";
+"tab.office" = "Office";
+"tab.zone" = "Seaview";
+"tab.pets" = "Pets";
+"tab.advanced" = "Advanced";
+"general.language" = "Language";
+"general.language.system" = "System";
+/* glossary: "takes effect after restarting Soulgent" (zh wording kept as is) */
+"general.language.restart" = "Takes effect after restarting Soulgent.";
+"general.textSize" = "Text Size";
+"general.textSize.small" = "Small";
+"general.textSize.standard" = "Standard";
+"general.textSize.large" = "Large";
+"general.textSize.extraLarge" = "Extra Large";
+"general.textSize.note" = "Applies to Duty Room cards and the title bar, not Office or Seaview.";
+"general.accessibility" = "Allow Soulgent in System Settings > Privacy & Security > Accessibility. Turning this on shows the system prompt.";
+"general.login" = "Open at Login";
+"general.login.managed" = "Managed by a launchd job, not here";
+"general.login.open" = "Open LaunchAgents Folder";
+"office.walks" = "Walk Around";
+"office.theme" = "Theme";
+"office.background" = "Background Color…";
+"office.background.follows" = "Background Follows Theme";
+"office.background.reset" = "Reset to Theme Color";
+"zone.aura.note" = "A golden flame around pets of Fable sessions.";
+"zone.lightning" = "Lightning";
+"zone.lightning.note" = "Lightning in the flame; hidden when Blaze Mode is off.";
+"zone.orca" = "Orca Clips";
+"zone.orca.note" = "An orca now and then, out on the sea.";
+"pets.reshuffle" = "Reshuffle Pets";
+"pets.reshuffle.button" = "Reshuffle…";
+"pets.restore" = "Restore";
+"pets.open" = "Open Sessions";
+"pets.none" = "No open sessions.";
+/* %@ = the pet's id, %@ = the size step (+1, 0, -1) */
+"pets.row" = "%@  ·  Size %@";
+"pets.reshuffle.ask" = "Give every session a new pet?";
+/* dialog button */
+"pets.reshuffle.confirm" = "Reshuffle";
+/* dialog button */
+"pets.reshuffle.cancel" = "Cancel";
+"pets.reshuffle.note" = "Each session gets a new pet; hidden ones won't come back.";
+"advanced.demo" = "Demo: Fly a Message";
+"advanced.demo.button" = "Fly";
+"advanced.log" = "Log";
+"advanced.log.open" = "Open Log";
+"advanced.data" = "Data Folder";
+"advanced.data.open" = "Open Data Folder";

@@ -1,0 +1,21 @@
+# Private reverse-proxy template: copy to caddy-private/<name>.caddy (*.caddy is gitignored) and edit.
+# The Caddyfile imports caddy-private/*.caddy after the cookie gate; Caddy still starts when there are none.
+# Also add the prefix to ADMIN_ONLY_PREFIXES in .env (comma-separated) so the gate returns 403 to the guest; @notadmin below is a second guard.
+# Put secrets and other env vars in .env, then pass them to caddy via caddy.environment in docker-compose.override.yml
+# (see docker-compose.override.yml.example).
+# After editing: docker compose up -d --force-recreate caddy.
+
+# Add the trailing slash to /docs
+redir /docs /docs/ 308
+
+# Example: proxy /docs/ to another web page on host port 9000, admin only
+handle_path /docs/* {
+	@notadmin not header X-ZBS-User admin
+	respond @notadmin 403
+	reverse_proxy host.docker.internal:9000 {
+		header_up X-Forwarded-Prefix /docs
+		header_up X-ZBS-Proxy-Secret {env.DOCS_PROXY_SECRET}
+		# Do not forward this site's login cookie (zbs=) to the backend; other cookies pass through
+		header_up Cookie "(^|;\s*)zbs=[^;]*" ""
+	}
+}

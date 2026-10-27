@@ -1,0 +1,6 @@
+{"kind":"mode","value":"default","session":"00000000-demo-0000-0000-format000001"}
+{"kind":"title","value":"demo-garden","session":"00000000-demo-0000-0000-format000001"}
+{"kind":"human","role":"user","body":"Water the demo tomatoes","at":"2026-10-20T08:00:00.000Z","session":"00000000-demo-0000-0000-format000001"}
+{"kind":"model","role":"assistant","body":[{"kind":"text","text":"The demo tomatoes are watered."}],"at":"2026-10-20T08:00:05.000Z","session":"00000000-demo-0000-0000-format000001"}
+{"kind":"prompt-memo","value":"Water the demo tomatoes","session":"00000000-demo-0000-0000-format000001"}
+{"kind":"event","name":"turn_duration","ms":5000,"at":"2026-10-20T08:00:06.000Z","session":"00000000-demo-0000-0000-format000001"}

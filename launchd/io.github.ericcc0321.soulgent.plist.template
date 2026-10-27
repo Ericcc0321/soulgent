@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template: tools/install.sh replaces __REPO__ and __HOME__ and installs it in ~/Library/LaunchAgents/. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>io.github.ericcc0321.soulgent</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>__REPO__/app/Soulgent.app/Contents/MacOS/Soulgent</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <!-- Reopen after a crash, but stay closed when quit from the menu bar item (exit code 0). -->
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    <key>LimitLoadToSessionType</key>
+    <string>Aqua</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Application Support/Soulgent/panel.log</string>
+</dict>
+</plist>

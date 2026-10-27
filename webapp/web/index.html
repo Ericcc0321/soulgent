@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Soulgent">
+<meta name="theme-color" content="#111111">
+<meta name="color-scheme" content="dark">
+<meta name="format-detection" content="telephone=no">
+<meta name="zbs-shell" content="v142">
+<title>Soulgent</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/icon-180.png?v=4">
+<link rel="icon" type="image/svg+xml" href="/icons/favicon.svg?v=1">
+<link rel="icon" type="image/png" href="/icons/icon-192.png?v=4">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1125x2436.png?v=3">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1170x2532.png?v=3">
+<link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1179x2556.png?v=3">
+<link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1206x2622.png?v=3">
+<link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1284x2778.png?v=3">
+<link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1290x2796.png?v=3">
+<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1320x2868.png?v=3">
+<script>
+// Login link /#k=<key>: hand it to the login page before any module runs (diagnostics would otherwise see the hash); drop it from this history entry first
+if (/^#k=/.test(location.hash)) { var zk = location.hash; history.replaceState(null, "", location.pathname + location.search); location.replace("/login.html" + zk); }
+</script>
+<style>html{background:#111111}html:not([data-i18n-done]) [data-i18n]{visibility:hidden}</style>
+<link rel="stylesheet" href="/style.css">
+<link rel="modulepreload" href="/i18n.js">
+<link rel="modulepreload" href="/logic.js">
+<link rel="modulepreload" href="/md.js">
+<script type="module" src="/viewer.js"></script>
+<script type="module" src="/figures.js"></script>
+<script type="module" src="/app.js"></script>
+</head>
+<body>
+<div id="ptr" class="ptr" aria-hidden="true"><i></i></div>
+
+<header id="cr-nav" class="cr-nav" hidden>
+  <div class="cr-nav-row"><button id="cr-title" class="cr-title" type="button">Soulgent</button></div>
+  <div id="cr-search" class="cr-search-wrap">
+    <label class="cr-search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input id="cr-q" type="search" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-label="Search" data-i18n-attr="placeholder:c.search;aria-label:c.search">
+      <button id="cr-clr" class="cr-clr" type="button" aria-label="Clear" data-i18n-attr="aria-label:html.clear" hidden>×</button>
+    </label>
+    <button id="cr-cancel" class="cr-cancel" type="button" hidden data-i18n="c.cancel">Cancel</button>
+  </div>
+</header>
+
+<main id="home" class="home">
+  <section id="p-msg" class="cr-pane" aria-label="Messages" data-i18n-attr="aria-label:html.paneMsg" hidden>
+    <button id="cr-mac" class="cr-mac" type="button" hidden aria-label="Signed-in devices: Orca usage and Mac health" data-i18n-attr="aria-label:html.macBtn">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.75" y="4" width="18.5" height="12.5" rx="1.5"/><path d="M9 20.25h6M12 16.5v3.75"/></svg>
+      <i id="cr-mac-dot" class="cr-macdot" aria-hidden="true"></i>
+      <span id="cr-mac-t"></span>
+      <span id="cr-quota" class="cr-quota"></span>
+    </button>
+    <ul id="cr-msgs" class="cr-list"></ul>
+  </section>
+  <section id="p-contacts" class="cr-pane" aria-label="Contacts" data-i18n-attr="aria-label:html.paneContacts" hidden>
+    <ul id="cr-top" class="cr-list cr-shortcuts"></ul>
+    <div id="cr-contacts"></div>
+    <nav id="cr-rail" class="cr-rail" aria-label="Zone index" data-i18n-attr="aria-label:html.rail"></nav>
+  </section>
+  <section id="p-zones" class="cr-pane" aria-label="Zones" data-i18n-attr="aria-label:html.paneZones" hidden>
+    <div id="zb" class="zb"></div>
+  </section>
+  <section id="p-me" class="cr-pane" aria-label="Me" data-i18n-attr="aria-label:tab.me" hidden>
+    <div id="cr-me" class="cr-me"></div>
+  </section>
+  <section id="p-search" class="cr-pane" aria-label="Search results" data-i18n-attr="aria-label:html.paneSearch" hidden>
+    <div id="cr-sout"></div>
+  </section>
+</main>
+
+<!-- Bottom tabs: 28x28, stroke 1.7. All four tabs use Soulgent flame icons (icons/tab-<name>-off/on.svg): the off image is used as a mask and follows the text color (currentColor) when unselected; the on image is shown as is when selected (the flame is colored itself, the other lines are #1f8fff, not tinted) -->
+<nav id="tabbar" class="cr-tabbar" aria-label="Main navigation" data-i18n-attr="aria-label:tab.nav">
+  <button class="cr-tab" data-tab="msg" type="button">
+    <span class="ti ti-img ti-soulchat" aria-hidden="true"><i class="so-off"></i><img class="so-on" src="/icons/tab-soulchat-on.svg?v=1" alt=""></span>
+    <span data-i18n="tab.chat">SoulChat</span><b id="tb-msg" class="cr-tb" hidden></b>
+  </button>
+  <button class="cr-tab" data-tab="contacts" type="button">
+    <span class="ti ti-img ti-agents" aria-hidden="true"><i class="so-off"></i><img class="so-on" src="/icons/tab-agents-on.svg?v=1" alt=""></span>
+    <span data-i18n="tab.agents">Agents</span>
+  </button>
+  <button class="cr-tab" data-tab="zones" type="button">
+    <span class="ti ti-img ti-zone" aria-hidden="true"><i class="so-off"></i><img class="so-on" src="/icons/tab-zone-on.svg?v=1" alt=""></span>
+    <span data-i18n="tab.zones">Dashboard</span>
+  </button>
+  <button class="cr-tab" data-tab="me" type="button">
+    <span class="ti ti-img ti-me" aria-hidden="true"><i class="so-off"></i><img class="so-on" src="/icons/tab-me-on.svg?v=2" alt=""></span>
+    <span data-i18n="tab.me">Me</span>
+  </button>
+</nav>
+
+<!-- Full-screen pages (slide up from the bottom): monitor "signed-in devices", zone task board -->
+<section id="fs" class="fs" hidden role="dialog" aria-modal="true" aria-labelledby="fs-t">
+  <header class="fs-nav">
+    <button id="fs-x" class="fs-x" type="button" aria-label="Close" data-i18n-attr="aria-label:c.close">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+    </button>
+    <b id="fs-t" class="fs-t"></b>
+    <span class="fs-side" aria-hidden="true"></span>
+  </header>
+  <div id="fs-body" class="fs-body"></div>
+</section>
+
+<!-- Blank page on the right of the desktop two-column layout, when no conversation is open (hidden on phones) -->
+<div class="desk-empty" aria-hidden="true">
+  <img class="desk-glyph" src="/icons/mascot-idle.png?v=1" alt="">
+  <span data-i18n="html.deskEmpty">Pick a session on the left to view the chat</span>
+</div>
+
+<section id="detail" class="detail" hidden aria-label="Chat" data-i18n-attr="aria-label:html.detail">
+  <header class="d-nav">
+    <button id="back" class="back" type="button" aria-label="Back" data-i18n-attr="aria-label:html.back">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="mini"><div id="d-pet" class="pet"></div></div>
+    <div class="d-title">
+      <b id="d-name"></b>
+      <small><i id="d-zone"></i><span id="d-sub"></span></small>
+    </div>
+    <div id="d-stat" class="d-stat" role="button" tabindex="0" hidden><span></span><span></span></div>
+    <button id="d-ctx" class="d-ctx" type="button" hidden aria-label="Context usage" data-i18n-attr="aria-label:html.ctx">
+      <span class="d-ctx-r"><span id="d-ctx-svg"></span><b id="d-ctx-p"></b></span>
+      <small id="d-ctx-tps"></small>
+    </button>
+    <button id="d-more" class="d-more" type="button" aria-label="Chat info" data-i18n-attr="aria-label:html.chatInfo"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><circle cx="5" cy="12" r="1.9"/><circle cx="12" cy="12" r="1.9"/><circle cx="19" cy="12" r="1.9"/></svg></button>
+  </header>
+  <div id="d-down" class="d-down" role="status" hidden></div>
+  <div id="d-alert" class="d-down d-alert" role="status" hidden></div>
+  <div class="msgs-wrap">
+    <div id="msgs" class="msgs">
+      <div id="older" class="older"></div>
+      <div id="list" class="list"></div>
+    </div>
+    <button id="new-btn" class="new-btn" type="button" hidden></button>
+  </div>
+  <!-- Overlay hint when dragging files in on desktop (shown only while dragging) -->
+  <div id="drop-hint" class="drop-hint" hidden aria-hidden="true">
+    <div class="drop-box">
+      <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5"/><path d="M4.5 15.5v2A2.5 2.5 0 007 20h10a2.5 2.5 0 002.5-2.5v-2"/></svg>
+      <b data-i18n="html.dropTitle">Drop to attach</b>
+      <small data-i18n="html.dropSub">Up to 9, sent with your text</small>
+    </div>
+  </div>
+  <footer id="cta" class="cta">
+    <div id="clip-card" class="clip-card" hidden>
+      <img id="clip-img" alt="Clipboard image" data-i18n-attr="alt:html.clipImg">
+      <span class="clip-tx" data-i18n="html.clipTx">There's an image on the clipboard</span>
+      <button id="clip-send" class="clip-send" type="button" data-i18n="html.clipAdd">Attach</button>
+      <button id="clip-x" class="clip-x" type="button" aria-label="Close" data-i18n-attr="aria-label:c.close">✕</button>
+    </div>
+    <div id="tray" class="tray" hidden></div>
+    <div id="quote-bar" class="quote-bar" hidden>
+      <div class="jq-wrap"><div id="quote-tx" class="quote-tx"></div></div>
+      <button id="quote-x" class="quote-x" type="button" aria-label="Cancel quote" data-i18n-attr="aria-label:html.quoteX">✕</button>
+    </div>
+    <div id="orca-hint" class="orca-hint" role="status" hidden></div>
+    <div class="cta-row">
+      <div id="composer" class="composer">
+        <div class="pc-bar"><button id="btn-pick" class="pc-pick" type="button" aria-label="Choose files" title="Choose files" data-i18n-attr="aria-label:html.pick;title:html.pick"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></button></div>
+        <textarea id="reply" rows="1" maxlength="4000" enterkeyhint="send" placeholder="Reply to this session…" aria-label="Reply text" data-i18n-attr="placeholder:html.reply;aria-label:html.replyLabel"></textarea>
+        <button id="btn-send" class="send-btn" type="button" disabled data-i18n="html.send">Send</button>
+      </div>
+      <button id="btn-plus" class="plus-btn" type="button" aria-label="Send images or files" data-i18n-attr="aria-label:html.plus" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+      <div id="no-reply" class="no-reply" hidden data-i18n="fail.not-claude">Replies aren't supported for this kind of session</div>
+      <div id="wake" class="wake" hidden>
+        <div id="wake-msg" class="wake-msg" role="alert" hidden></div>
+        <button id="btn-wake" class="wake-btn" type="button" data-i18n="html.wake">Wake up</button>
+      </div>
+    </div>
+    <div id="plus-panel" class="plus-panel" hidden>
+      <button type="button" class="pp-cell" data-act="photo"><i class="pp-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.8"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg></i><span data-i18n="html.ppPhoto">Photos</span></button>
+      <button type="button" class="pp-cell" data-act="camera"><i class="pp-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></i><span data-i18n="html.ppCamera">Camera</span></button>
+      <button type="button" class="pp-cell" data-act="file"><i class="pp-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg></i><span data-i18n="html.ppFile">Files</span></button>
+      <button type="button" class="pp-cell" data-act="paste"><i class="pp-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="16" rx="2.5"/><path d="M9 5V4h6v1M9 12h6M9 16h4"/></svg></i><span data-i18n="html.ppPaste">Paste image</span></button>
+    </div>
+    <input id="in-pick" class="file-in" type="file" multiple tabindex="-1" aria-hidden="true">
+    <input id="in-photo" class="file-in" type="file" accept="image/*" multiple tabindex="-1" aria-hidden="true">
+    <input id="in-camera" class="file-in" type="file" accept="image/*" capture="environment" tabindex="-1" aria-hidden="true">
+    <input id="in-file" class="file-in" type="file" multiple accept=".pdf,.txt,.md,.csv,.json,.log,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.zip,.rtf,.html,.xml,.yaml,.yml,.py,.js,.ts,.sh" tabindex="-1" aria-hidden="true">
+  </footer>
+</section>
+
+<div id="sheet-wrap" class="sheet-wrap" hidden>
+  <div class="sheet-backdrop"></div>
+  <div id="sheet" class="sheet" role="dialog"></div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="vw" class="vw" hidden></div>
+</body>
+</html>

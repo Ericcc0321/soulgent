@@ -1,0 +1,91 @@
+/* The office: its themes, cards, menus, wall words.
+   Keys not here yet show the simplified original (logged once). */
+
+/* ── Theme names and zone list states (glossary) ── */
+"theme.studio" = "Slate";
+"theme.night" = "Warm Night";
+"theme.zone" = "Seaview";
+
+/* ── Office (switch, right-click menu, notice board, wall words, chips) ── */
+/* the three screens (glossary); the switch, the menu-bar menu */
+"mode.board" = "Duty Room";
+"mode.office" = "Office";
+"mode.zone" = "Seaview";
+/* office chip: those waiting beyond the queue */
+"chip.waiting" = "+%lld more waiting";
+/* office chip */
+"chip.news" = "+%lld more with news";
+/* office chip */
+"chip.work" = "+%lld more working";
+/* right-click menu on a session */
+"session.jump" = "Go to Session";
+/* right-click menu (glossary: the zh "Reply later" item = Reply later) */
+"session.pin" = "Mark Reply Later (Keep in News)";
+/* right-click menu (glossary) */
+"session.unpin" = "Remove Reply Later";
+/* right-click menu */
+"session.desk" = "Move to Desk (Mark Seen)";
+/* right-click menu */
+"session.rest" = "Move to Resting (Not Needed)";
+/* right-click menu */
+"session.openFolder" = "Show Project in Finder";
+/* right-click menu */
+"session.changePet" = "Change Pet";
+/* right-click menu */
+"session.banPet" = "Never Use This Pet";
+/* right-click menu */
+"session.sizeUp" = "Larger";
+/* right-click menu */
+"session.sizeDown" = "Smaller";
+/* right-click menu */
+"session.sizeReset" = "Default Size";
+/* right-click menu */
+"session.sendOff" = "Send Off Duty";
+/* notice board line */
+"event.finished.peer" = "↔ Done (with %@)";
+/* who a finished line says it was with, name unknown */
+"event.otherSession" = "another session";
+/* notice board line */
+"event.finished.agent" = "⚙ Done (subagent report)";
+/* notice board line */
+"event.approve" = "Needs approval";
+/* notice board line */
+"event.answer" = "Needs an answer";
+/* notice board line */
+"event.waiting" = "Waiting for you";
+/* notice board line (whole) */
+"event.talk" = "Talking to %@";
+/* notice board row, before the partner's name */
+"event.talk.before" = "Talking to ";
+/* notice board row, after the partner's name (none in English) */
+"event.talk.after" = "";
+/* notice board card */
+"noticeBoard.title" = "What just happened";
+/* notice board card */
+"noticeBoard.empty" = "Nothing yet.";
+/* a date pattern (DateFormatter), not words */
+"date.monthDay" = "MMM d";
+/* notice board time */
+"date.yesterday" = "Yesterday";
+/* office floor label (beside a count) */
+"wall.resting" = "Resting";
+/* office floor label */
+"wall.desks" = "Desks";
+/* office floor label */
+"wall.news" = "News";
+/* office floor label */
+"wall.waiting" = "Waiting";
+/* the door's plate (glossary) */
+"door.lounge" = "Lounge";
+/* the door's plate with those behind it */
+"door.lounge.more" = "Lounge +%lld";
+/* wall text of an empty office */
+"office.empty" = "No open sessions. Start one in Orca and it walks right in.";
+/* first part of a helper's line on a card */
+"agent.label" = "Subagent";
+/* after the first three helpers */
+"agents.more" = "+%lld more";
+/* list opened from the door */
+"list.door" = "+%lld more in the lounge";
+/* list opened from the waiting chip */
+"list.waiting" = "+%lld more waiting";

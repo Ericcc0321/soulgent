@@ -1,0 +1,4 @@
+day,zone,tokens,note
+2026-01-01,Web,120000,"first, with comma"
+2026-01-02,Docs,80000,中文备注
+2026-01-03,Infra,64000,"quote ""inside"""

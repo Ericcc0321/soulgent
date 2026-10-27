@@ -1,0 +1,39 @@
+name: test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  webapp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: webapp
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Some Python checks drive node and skip themselves without it, so both live in one job.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: python3 -m pip install -r api/requirements.txt
+      - run: python3 -m unittest discover -s tests -t .
+      # The glob matters: `node --test web/tests` takes the folder for a module.
+      - run: node --test web/tests/*.test.mjs
+
+  mac-app:
+    # Run by hand only (Actions > test > Run workflow) until the Swift checks are confirmed on a clean checkout.
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - run: app/test.sh

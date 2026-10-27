@@ -1,0 +1,6 @@
+2026-10-20T08:00:00.000Z lifecycle:created {"instanceId":"demo-1","state":"idle","transport":"local"}
+2026-10-20T08:00:00.100Z method:requests {"instanceId":"demo-1","resultScope":"page"}
+2026-10-20T08:00:01.000Z state-machine:transition {"instanceId":"demo-1","from":"idle","to":"working"}
+2026-10-20T08:00:03.000Z ask-user-question:pending-created {"instanceId":"demo-1","optionCount":3}
+2026-10-20T08:00:03.010Z state-machine:transition {"instanceId":"demo-1","from":"working","to":"pending"}
+2026-10-20T08:00:03.020Z ask-user-question:request-permission-received {"instanceId":"demo-1","optionCount":3}

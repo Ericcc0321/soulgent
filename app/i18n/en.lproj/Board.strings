@@ -1,0 +1,154 @@
+/* The board (the duty room), the title bar, the menu-bar menu and the time words.
+   Keys not here yet show the simplified original (logged once). */
+
+/* a card whose session has work running in the background: how many tasks (%lld). BG N in all three (glossary, as the phone's top bar) */
+"bg.count" = "BG %lld";
+/* the error group and the words under a name. */
+"board.failed" = "Error";
+"board.fail.retrying" = "Retrying %lld/%lld";
+"board.fail.rateLimit" = "Usage limit reached";
+"board.fail.relogin" = "Sign in again";
+"board.fail.stopped" = "Stopped";
+"board.fail.apiStatus" = "API error %lld";
+"board.fail.api" = "API error";
+
+/* ── Theme names and zone list states (glossary) ── */
+"time.justNow" = "just now";
+"time.minutes" = "%lldm";
+"time.hours" = "%lldh";
+"time.days" = "%lldd";
+"time.ago" = "%@ ago";
+"time.waitingApproval" = "Needs approval · %@";
+"time.waitingAnswer" = "Needs your answer · %@";
+"time.waiting" = "Waiting · %@";
+
+/* ── Settings / menu bar / About / search ── */
+/* menu-bar menu's first line */
+"menu.counts" = "%lld waiting · %lld news · %lld working";
+/* menu-bar menu (en says Soulgent, as the glossary: the Mac program is not called the Dashboard) */
+"menu.toggle" = "Show / Hide Soulgent";
+/* menu-bar menu */
+"menu.markAllSeen" = "Mark All as Seen";
+/* menu-bar menu */
+"menu.settings" = "Settings…";
+/* menu-bar menu */
+"menu.about" = "About Soulgent";
+/* menu-bar menu */
+"menu.quit" = "Quit Soulgent";
+/* menu-bar item and the Settings switch */
+"menu.spotlight" = "Spotlight: Follow Orca";
+/* %@ = menu.spotlight */
+"menu.spotlight.needsAccess" = "%@ (Needs Accessibility Access…)";
+/* tooltip of the menu item without the permission */
+"menu.spotlight.help.needsAccess" = "Allow Soulgent in System Settings > Privacy & Security > Accessibility. It asks Orca to expose its page to Accessibility and reads only the tab titles, to know which session you are typing in.";
+/* tooltip, on */
+"menu.spotlight.help.on" = "In the Office, the session you are typing in has a beam of light over it. Click to turn off.";
+/* tooltip, off */
+"menu.spotlight.help.off" = "Click to turn on: the Office shines a light on the session you are typing in.";
+/* %@ = the mode's name; a mode the window is too small for */
+"menu.modeNeedsWindow" = "%@ (needs a bigger window)";
+/* menu item and the Settings row; %lld = how many */
+"menu.unban" = "Restore Hidden Pets (%lld)";
+/* About box */
+"about.version" = "Version %@";
+/* version shown when the bundle has none */
+"about.devBuild" = "Dev build";
+/* About box */
+"about.blurb" = "See every Claude Code and Codex session in one floating window: who's waiting, who has news, who's working.";
+/* About box button */
+"about.ok" = "OK";
+/* About box button */
+"about.openRepo" = "Open Project Folder";
+"search.help" = "Search Sessions (name, project, folder)";
+/* accessibility label */
+"search.label" = "Search Sessions";
+"search.placeholder" = "Search sessions: name, project, folder";
+/* accessibility label */
+"search.close" = "Close Search";
+"search.none" = "No matches";
+
+/* ── Panel (duty room, title bar, cards, tooltips) ── */
+/* SummaryLine.displayText (the card's line; --dump keeps its own) */
+"line.ask" = "Asks: %@";
+/* more than one question */
+"line.ask.count" = "Asks: %@ (%lld questions)";
+"line.askGeneric" = "Has a question for you";
+"line.plan" = "Plan ready for approval";
+"line.approve.run" = "Approve to run: %@";
+"line.approve.edit" = "Approve edit: %@";
+/* a file name not given */
+"line.approve.edit.file" = "file";
+"line.approve.tool" = "Approve tool: %@";
+"line.approve" = "Needs approval";
+/* no options known (with options: Plurals common.answerOptions) */
+"line.answer" = "Needs your answer";
+"line.paused" = "Paused";
+"line.stopped" = "Stopped";
+"line.error" = "Error";
+"line.you" = "You: %@";
+"line.relay.agent" = "Handling a subagent report…";
+"line.relay.peer" = "Handling a message from another session…";
+"line.relay.from" = "Handling %@'s report…";
+"line.apiError.auth" = "Sign in again";
+"line.apiError.status" = "API error %lld: %@";
+"line.apiError" = "API error: %@";
+"line.retrying" = "Retrying %lld/%lld";
+/* glossary */
+"line.disconnected" = "Exited unexpectedly";
+/* after ↔ on a finished card whose last turn came from another session */
+"origin.peer.other" = "With another session";
+/* duty room group title (glossary) */
+"group.waiting" = "Waiting for you";
+/* duty room group title */
+"group.unread" = "Done, with news for you";
+/* duty room group title */
+"group.busy" = "Working";
+/* duty room group title (glossary) */
+"group.seen" = "Seen";
+/* duty room group title */
+"group.resting" = "Resting";
+/* title bar count */
+"count.waiting" = "waiting";
+/* title bar count */
+"count.news" = "news";
+/* title bar count */
+"count.working" = "working";
+/* board header line (two spaces between) */
+"board.header" = "%lld waiting  %lld news  %lld working";
+"board.empty" = "No open sessions. Start one in Orca and it shows up here.";
+/* narrow inbox */
+"inbox.older.show" = "Show %lld older";
+/* narrow inbox */
+"inbox.older.hide" = "Hide %lld older";
+/* title bar: the 5-hour usage */
+"usage.fiveHour" = "5h";
+/* title bar: the weekly usage */
+"usage.week" = "Week";
+"usage.help.title" = "Claude Code usage, shared by all sessions";
+"usage.help.fiveHour" = "5-hour: %lld%%, resets %@";
+"usage.help.week" = "Week: %lld%%, resets %@";
+/* a date pattern (DateFormatter), not words */
+"usage.dateFormat" = "MMM d HH:mm";
+/* title bar button */
+"bar.markAllSeen" = "Mark All Seen";
+/* title bar button, narrow window */
+"bar.markAllSeen.short" = "All Seen";
+"bar.markAllSeen.help" = "Mark every finished session as seen; reply-later ones stay";
+"card.help.pinned" = "Marked reply later: clears when you reply";
+"card.help.model" = ", model %@";
+"card.help.codex" = "This is a Codex CLI session";
+"card.help.codexApp" = "This is a Codex App session";
+"card.help.workbuddy" = "This is a WorkBuddy session";
+"card.help.click" = "Click to open this session in %@";
+"card.help.rightClick" = "Right-click for more: go to session, mark or remove reply later, move to a desk or Resting, show project in Finder";
+/* tooltip of a peer on a card; %@ = a length of time */
+"peer.help" = "Sent %lld, received %lld, last %@ ago";
+/* between the tooltip and the peer's last note */
+"peer.help.sep" = ": ";
+
+/* the board's header and the menu's first line with the error count (%@ = board.failed) after the waiting. */
+"board.header.failed" = "%lld waiting  %lld %@  %lld news  %lld working";
+"menu.counts.failed" = "%lld waiting · %lld %@ · %lld news · %lld working";
+
+/* the title bar's amber dot: another program's format not understood (%@ = Claude Code, Codex, WorkBuddy or Orca), one line each. */
+"bar.formatWarning" = "%@'s session format has changed; some details may be missing";

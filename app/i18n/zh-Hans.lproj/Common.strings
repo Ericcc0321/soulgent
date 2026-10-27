@@ -1,0 +1,59 @@
+/* Common words: only those of the three-language glossary (zh-Hans / zh-Hant / en).
+   Keys not here yet show the simplified original (logged once). */
+
+/* the bottom bar's "Dashboard" */
+"common.dashboard" = "看板";
+"common.session" = "会话";
+"common.approve" = "批准";
+"common.blazeMode" = "火焰与闪电附身";
+"common.unsend" = "撤回";
+"common.unsent" = "已撤回";
+/* phone only */
+"common.pin" = "置顶";
+/* the defaults key `pinned` is unchanged */
+"common.replyLater" = "稍后回复";
+"common.replyLater.remove" = "取消稍后回复";
+"common.replyLater.marked" = "已设为稍后回复";
+"common.replyLater.removed" = "已取消稍后回复";
+"common.replyLater.order" = "稍后回复的排在「在等你」之后";
+"common.delegating" = "派活";
+/* the grouping concept; not the bottom bar's Dashboard label */
+"common.zone" = "工区";
+"common.mute" = "免打扰";
+"common.avatar" = "头像";
+"common.nickname" = "昵称";
+"common.onDuty" = "在班";
+"common.offDuty" = "下班";
+"common.notOnDuty" = "不在班";
+"common.resting" = "休息中";
+"common.markSeen" = "看过";
+"common.signedInDevices" = "已登录设备";
+/* default nickname */
+"common.guest" = "访客";
+"common.needsDecision" = "有事要你定";
+"common.done" = "干完了";
+"common.testNotification" = "这是一条测试通知";
+/* %@ = the other session's name */
+"common.talkingWith" = "与 %@ 往来";
+"common.agentReport.handled" = "处理了子代理回报";
+/* in progress */
+"common.agentReport.handling" = "正在处理子代理回报…";
+"common.contextCompacted" = "上下文已压缩";
+/* a file name that is empty or missing: both cases read the same */
+"common.approveFileEdit" = "等你批准修改文件";
+/* collective name for the figures */
+"common.flame" = "灵火";
+/* avatar badge */
+"common.errand" = "跑腿中";
+/* long form, used when it fits (e.g. the Mac title bar) */
+"common.orcaOnline" = "Orca 在线";
+/* short form, used in narrow places (e.g. the top of the phone's list); the same in all three languages */
+"common.orcaOnlineShort" = "Orca ✓";
+/* %lld = ordinal number */
+"common.image" = "图片 %lld";
+/* its background work has run for hours, likely hung */
+"common.bg.hung" = "后台任务疑似挂住";
+/* a session's process exited unexpectedly; not called "disconnected" */
+"common.exitedUnexpectedly" = "意外退出";
+/* a session with no name of its own; shown only, the name itself stays the Chinese placeholder ("unnamed") in --dump and for matching */
+"common.untitled" = "未命名";

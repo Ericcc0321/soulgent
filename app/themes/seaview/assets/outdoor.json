@@ -1,0 +1,384 @@
+{
+ "picture": [
+  2400,
+  1600
+ ],
+ "crabs": [
+  {
+   "kind": "cute",
+   "frames": 6,
+   "fps": 24,
+   "crop": [
+    1502,
+    168,
+    1682,
+    328
+   ],
+   "foot": [
+    1591.9621,
+    247.831
+   ],
+   "walk_px_per_m": [
+    93.129,
+    30.486
+   ],
+   "zone": [
+    [
+     881.5946,
+     -34.37839999999998
+    ],
+    [
+     4979.258,
+     1307.004
+    ],
+    [
+     5038.679066666667,
+     1239.9887111111111
+    ],
+    [
+     941.0154444444445,
+     -101.3936444444444
+    ]
+   ],
+   "speed_m_per_s": 0.6
+  },
+  {
+   "kind": "ghost",
+   "frames": 6,
+   "fps": 24,
+   "crop": [
+    1502,
+    168,
+    1682,
+    328
+   ],
+   "foot": [
+    1591.9621,
+    247.831
+   ],
+   "walk_px_per_m": [
+    93.129,
+    30.486
+   ],
+   "zone": [
+    [
+     747.8977,
+     116.4059
+    ],
+    [
+     4845.5606,
+     1457.7884
+    ],
+    [
+     4979.258,
+     1307.004
+    ],
+    [
+     881.5946,
+     -34.3784
+    ]
+   ],
+   "speed_m_per_s": 0.55
+  },
+  {
+   "kind": "hermit",
+   "frames": 6,
+   "fps": 24,
+   "crop": [
+    1502,
+    168,
+    1682,
+    328
+   ],
+   "foot": [
+    1591.9621,
+    247.831
+   ],
+   "walk_px_per_m": [
+    93.129,
+    30.486
+   ],
+   "zone": [
+    [
+     881.5946,
+     -34.37839999999998
+    ],
+    [
+     4979.258,
+     1307.004
+    ],
+    [
+     5038.679066666667,
+     1239.9887111111111
+    ],
+    [
+     941.0154444444445,
+     -101.3936444444444
+    ]
+   ],
+   "speed_m_per_s": 0.25
+  }
+ ],
+ "gulls": [
+  {
+   "kind": "herring",
+   "frames": 48,
+   "fps": 24,
+   "crop": [
+    1683,
+    10,
+    1983,
+    240
+   ],
+   "centre": [
+    1832.6888,
+    124.7839
+   ],
+   "heading": "picture-right (world (0.883, 0.47))",
+   "shadow_offset_px_per_m_height": 83.115,
+   "speed_m_per_s": 6.0
+  },
+  {
+   "kind": "blackhead",
+   "frames": 48,
+   "fps": 24,
+   "crop": [
+    1683,
+    10,
+    1983,
+    240
+   ],
+   "centre": [
+    1832.6888,
+    124.7839
+   ],
+   "heading": "picture-right (world (0.883, 0.47))",
+   "shadow_offset_px_per_m_height": 83.115,
+   "speed_m_per_s": 5.5
+  },
+  {
+   "kind": "tern",
+   "frames": 48,
+   "fps": 24,
+   "crop": [
+    1683,
+    10,
+    1983,
+    240
+   ],
+   "centre": [
+    1832.6888,
+    124.7839
+   ],
+   "heading": "picture-right (world (0.883, 0.47))",
+   "shadow_offset_px_per_m_height": 83.115,
+   "speed_m_per_s": 7.0
+  }
+ ],
+ "loop": {
+  "box": [
+   460,
+   0,
+   2400,
+   640
+  ],
+  "fps": 24,
+  "frames": 288
+ },
+ "walkers": [
+  {
+   "kind": "sandpiper",
+   "frames": 6,
+   "fps": 12,
+   "crop": [
+    1512,
+    168,
+    1672,
+    328
+   ],
+   "foot": [
+    1591.9621,
+    247.831
+   ],
+   "walk_px_per_m": [
+    93.129,
+    30.486
+   ],
+   "zone": [
+    [
+     866.7395,
+     -18.1768
+    ],
+    [
+     4964.4024,
+     1323.2057
+    ],
+    [
+     5013.9198,
+     1270.5281
+    ],
+    [
+     916.2568,
+     -70.8544
+    ]
+   ],
+   "speed_m_per_s": 0.9,
+   "behavior": "shoreRun",
+   "walk_frames": [
+    1,
+    4
+   ],
+   "idle_frames": [
+    5,
+    6
+   ],
+   "threat": "scatter"
+  },
+  {
+   "kind": "turtle",
+   "frames": 8,
+   "fps": 6,
+   "crop": [
+    1482,
+    163,
+    1702,
+    333
+   ],
+   "foot": [
+    1591.9621,
+    247.831
+   ],
+   "walk_px_per_m": [
+    93.129,
+    30.486
+   ],
+   "zone": [
+    [
+     807.3186090909091,
+     49.050909090909094
+    ],
+    [
+     1505.783809090909,
+     277.69566363636363
+    ],
+    [
+     1565.2047,
+     210.4679
+    ],
+    [
+     866.7395,
+     -18.1768
+    ]
+   ],
+   "speed_m_per_s": 0.12,
+   "behavior": "crawlRest",
+   "walk_frames": [
+    1,
+    4
+   ],
+   "idle_frames": [
+    5,
+    8
+   ],
+   "threat": "outside"
+  },
+  {
+   "kind": "clam",
+   "frames": 1,
+   "fps": 1,
+   "crop": [
+    1542,
+    203,
+    1642,
+    293
+   ],
+   "foot": [
+    1591.9621,
+    247.831
+   ],
+   "walk_px_per_m": [
+    93.129,
+    30.486
+   ],
+   "zone": [
+    [
+     797.415088,
+     60.449232
+    ],
+    [
+     4895.0783519999995,
+     1401.8317
+    ],
+    [
+     4979.258,
+     1307.004
+    ],
+    [
+     881.5946,
+     -34.3784
+    ]
+   ],
+   "speed_m_per_s": 0.0,
+   "behavior": "stationary",
+   "threat": "fixed"
+  }
+ ],
+ "gull_stands": [
+  {
+   "kind": "herring",
+   "frames": 2,
+   "crop": [
+    1482,
+    158,
+    1702,
+    338
+   ],
+   "foot": [
+    1591.9621,
+    247.831
+   ],
+   "drawn": "picture-right (world +x)"
+  },
+  {
+   "kind": "blackhead",
+   "frames": 2,
+   "crop": [
+    1482,
+    158,
+    1702,
+    338
+   ],
+   "foot": [
+    1591.9621,
+    247.831
+   ],
+   "drawn": "picture-right (world +x)"
+  },
+  {
+   "kind": "tern",
+   "frames": 2,
+   "crop": [
+    1482,
+    158,
+    1702,
+    338
+   ],
+   "foot": [
+    1591.9621,
+    247.831
+   ],
+   "drawn": "picture-right (world +x)"
+  }
+ ],
+ "deck_line": [
+  [
+   112.0,
+   -197.4
+  ],
+  [
+   3185.3,
+   808.7
+  ]
+ ],
+ "deck_line_note": "Line (pixels) along the top edge of the office balcony glass railing in the base image. Beach animals whose feet are below this line count as \"on the deck\" and do not flee when the orca clip C arrives."
+}

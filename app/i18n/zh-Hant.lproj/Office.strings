@@ -1,0 +1,91 @@
+/* The office: its themes, cards, menus, wall words.
+   Keys not here yet show the simplified original (logged once). */
+
+/* ── Theme names and zone list states (glossary) ── */
+"theme.studio" = "青灰";
+"theme.night" = "暖夜";
+"theme.zone" = "海景房";
+
+/* ── Office (switch, right-click menu, notice board, wall words, chips) ── */
+/* the three screens (glossary); the switch, the menu-bar menu */
+"mode.board" = "值班室";
+"mode.office" = "辦公室";
+"mode.zone" = "海景房";
+/* office chip: those waiting beyond the queue */
+"chip.waiting" = "還有 %lld 個在等你";
+/* office chip */
+"chip.news" = "還有 %lld 個有話說";
+/* office chip */
+"chip.work" = "還有 %lld 個在幹活";
+/* right-click menu on a session */
+"session.jump" = "跳到會話";
+/* right-click menu (glossary: the zh "Reply later" item = Reply later) */
+"session.pin" = "標記稍後回覆（留在「有話說」）";
+/* right-click menu (glossary) */
+"session.unpin" = "取消稍後回覆";
+/* right-click menu */
+"session.desk" = "轉到工位（算已看）";
+/* right-click menu */
+"session.rest" = "轉到休息區（不需要了）";
+/* right-click menu */
+"session.openFolder" = "在 Finder 中顯示專案資料夾";
+/* right-click menu */
+"session.changePet" = "換個角色";
+/* right-click menu */
+"session.banPet" = "以後不用這個角色";
+/* right-click menu */
+"session.sizeUp" = "放大一點";
+/* right-click menu */
+"session.sizeDown" = "縮小一點";
+/* right-click menu */
+"session.sizeReset" = "恢復預設大小";
+/* right-click menu */
+"session.sendOff" = "送下班";
+/* notice board line */
+"event.finished.peer" = "↔ 完成了（與 %@ 往來）";
+/* who a finished line says it was with, name unknown */
+"event.otherSession" = "其他會話";
+/* notice board line */
+"event.finished.agent" = "⚙ 完成了（子代理回報）";
+/* notice board line */
+"event.approve" = "在等你核准";
+/* notice board line */
+"event.answer" = "在等你回答";
+/* notice board line */
+"event.waiting" = "在等你";
+/* notice board line (whole) */
+"event.talk" = "找 %@ 說話";
+/* notice board row, before the partner's name */
+"event.talk.before" = "找 ";
+/* notice board row, after the partner's name (none in English) */
+"event.talk.after" = " 說話";
+/* notice board card */
+"noticeBoard.title" = "剛才發生了什麼";
+/* notice board card */
+"noticeBoard.empty" = "還沒有動靜。";
+/* a date pattern (DateFormatter), not words */
+"date.monthDay" = "M月d日";
+/* notice board time */
+"date.yesterday" = "昨天";
+/* office floor label (beside a count) */
+"wall.resting" = "休息";
+/* office floor label */
+"wall.desks" = "工位";
+/* office floor label */
+"wall.news" = "有話說";
+/* office floor label */
+"wall.waiting" = "在等你";
+/* the door's plate (glossary) */
+"door.lounge" = "休息室";
+/* the door's plate with those behind it */
+"door.lounge.more" = "休息室 +%lld";
+/* wall text of an empty office */
+"office.empty" = "現在沒有開啟的會話。在 Orca 裡開一個，它就會走進來。";
+/* first part of a helper's line on a card */
+"agent.label" = "子代理";
+/* after the first three helpers */
+"agents.more" = "還有 %lld 個";
+/* list opened from the door */
+"list.door" = "休息室裡還有 %lld 個";
+/* list opened from the waiting chip */
+"list.waiting" = "還有 %lld 個在等你";

@@ -1,0 +1,6 @@
+{"timestamp":"2026-10-20T08:00:00.000Z","type":"session_meta","payload":{"id":"00000000-demo-0000-0000-codex0000001","cwd":"/Users/demo/Projects/demo-garden","originator":"codex_cli_rs","cli_version":"0.160.0"}}
+{"timestamp":"2026-10-20T08:00:00.100Z","type":"turn_context","payload":{"cwd":"/Users/demo/Projects/demo-garden","model":"gpt-demo-1"}}
+{"timestamp":"2026-10-20T08:00:01.000Z","type":"event_msg","payload":{"type":"task_started","model_context_window":100000}}
+{"timestamp":"2026-10-20T08:00:01.100Z","type":"response_item","payload":{"type":"message","role":"user","content":[{"type":"input_text","text":"Count the demo apples"}]}}
+{"timestamp":"2026-10-20T08:00:04.000Z","type":"response_item","payload":{"type":"message","role":"assistant","content":[{"type":"output_text","text":"There are twelve demo apples."}]}}
+{"timestamp":"2026-10-20T08:00:04.500Z","type":"event_msg","payload":{"type":"task_complete","last_agent_message":"There are twelve demo apples."}}

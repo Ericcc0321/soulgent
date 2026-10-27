@@ -1,0 +1,6 @@
+{
+  "name": "demo-config",
+  "zones": ["Web", "Docs", "Infra"],
+  "limits": { "files": 9, "sizeMB": 20 },
+  "note": "演示用配置，不含真实数据"
+}

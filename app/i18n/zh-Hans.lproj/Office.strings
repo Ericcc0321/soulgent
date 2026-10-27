@@ -1,0 +1,93 @@
+/* The office: its themes, cards, menus, wall words.
+   Keys not here yet show the simplified original (logged once). */
+
+/* office theme (stored id 青灰 never changes) */
+"theme.studio" = "青灰";
+/* office theme (stored id 暖夜 never changes) */
+"theme.night" = "暖夜";
+/* the seaview room as a theme (stored id 海景房) */
+"theme.zone" = "海景房";
+
+/* ── Office (switch, right-click menu, notice board, wall words, chips) ── */
+/* the three screens (glossary); the switch, the menu-bar menu */
+"mode.board" = "值班室";
+"mode.office" = "办公室";
+"mode.zone" = "海景房";
+/* office chip: those waiting beyond the queue */
+"chip.waiting" = "还有 %lld 个在等你";
+/* office chip */
+"chip.news" = "还有 %lld 个有话说";
+/* office chip */
+"chip.work" = "还有 %lld 个在干活";
+/* right-click menu on a session */
+"session.jump" = "跳到会话";
+/* right-click menu (glossary: the zh "Reply later" item = Reply later) */
+"session.pin" = "标记待回复（留在「有话说」）";
+/* right-click menu (glossary) */
+"session.unpin" = "取消待回复";
+/* right-click menu */
+"session.desk" = "转到工位（算看过）";
+/* right-click menu */
+"session.rest" = "转到休息区（不需要了）";
+/* right-click menu */
+"session.openFolder" = "在访达里打开项目目录";
+/* right-click menu */
+"session.changePet" = "换个角色";
+/* right-click menu */
+"session.banPet" = "以后不用这个角色";
+/* right-click menu */
+"session.sizeUp" = "放大一点";
+/* right-click menu */
+"session.sizeDown" = "缩小一点";
+/* right-click menu */
+"session.sizeReset" = "恢复默认大小";
+/* right-click menu */
+"session.sendOff" = "送下班";
+/* notice board line */
+"event.finished.peer" = "↔ 干完了（与 %@ 往来）";
+/* who a finished line says it was with, name unknown */
+"event.otherSession" = "其他会话";
+/* notice board line */
+"event.finished.agent" = "⚙ 干完了（子代理回报）";
+/* notice board line */
+"event.approve" = "在等你批准";
+/* notice board line */
+"event.answer" = "在等你回答";
+/* notice board line */
+"event.waiting" = "在等你";
+/* notice board line (whole) */
+"event.talk" = "找 %@ 说话";
+/* notice board row, before the partner's name */
+"event.talk.before" = "找 ";
+/* notice board row, after the partner's name (none in English) */
+"event.talk.after" = " 说话";
+/* notice board card */
+"noticeBoard.title" = "刚才发生了什么";
+/* notice board card */
+"noticeBoard.empty" = "还没有动静。";
+/* a date pattern (DateFormatter), not words */
+"date.monthDay" = "M月d日";
+/* notice board time */
+"date.yesterday" = "昨天";
+/* office floor label (beside a count) */
+"wall.resting" = "休息";
+/* office floor label */
+"wall.desks" = "工位";
+/* office floor label */
+"wall.news" = "有话说";
+/* office floor label */
+"wall.waiting" = "在等你";
+/* the door's plate (glossary) */
+"door.lounge" = "休息室";
+/* the door's plate with those behind it */
+"door.lounge.more" = "休息室 +%lld";
+/* wall text of an empty office */
+"office.empty" = "现在没有打开的会话。在 Orca 里开一个，它就会走进来。";
+/* first part of a helper's line on a card */
+"agent.label" = "子代理";
+/* after the first three helpers */
+"agents.more" = "还有 %lld 个";
+/* list opened from the door */
+"list.door" = "休息室里还有 %lld 个";
+/* list opened from the waiting chip */
+"list.waiting" = "还有 %lld 个在等你";

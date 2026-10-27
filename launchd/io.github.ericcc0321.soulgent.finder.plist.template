@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template: tools/install.sh replaces __REPO__, __HOME__ and __LANG__ (the tags' language, from the system's) and installs it in ~/Library/LaunchAgents/. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>io.github.ericcc0321.soulgent.finder</string>
+    <!-- __ROOTS__: a pair of lines (- -root, the folder) for each `tools/install.sh - -finder - -root <folder>`; none given,
+         finder_sessions.py looks in those of ~/Projects, ~/Developer and ~/code that exist. Each root holds project folders,
+         one per subfolder; a root directly inside another root counts as a container, not as a project (finder_sessions.py -h). -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>__REPO__/tools/finder/finder_sessions.py</string>
+        __ROOTS__
+        <string>--lang</string>
+        <string>__LANG__</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>60</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>__HOME__/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>PYTHONUTF8</key>
+        <string>1</string>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Application Support/Soulgent/launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Application Support/Soulgent/launchd.log</string>
+    <key>ProcessType</key>
+    <string>Background</string>
+    <key>LowPriorityIO</key>
+    <true/>
+    <key>Nice</key>
+    <integer>10</integer>
+</dict>
+</plist>

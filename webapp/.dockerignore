@@ -1,0 +1,11 @@
+data/
+.claude/
+.git/
+.superpowers/
+web/
+tests/
+docs/
+tools/
+helper/
+*.md
+.env

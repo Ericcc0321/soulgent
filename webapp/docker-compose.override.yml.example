@@ -1,0 +1,18 @@
+# Optional: lets the phone open host files mentioned in bubbles (attachment preview). Copy to docker-compose.override.yml
+# (gitignored) and adjust; docker compose merges it automatically. Mount each directory read-only at /host/<name> and list
+# "host path=container path" in FILE_ROOTS, colon-separated.
+# Before adding a directory, grant Docker access in macOS Privacy & Security, otherwise the mount fails and api won't start.
+services:
+  api:
+    volumes:
+      - /private/tmp:/host/tmp:ro
+      - ${HOME}/Desktop:/host/Desktop:ro
+      - ${HOME}/Downloads:/host/Downloads:ro
+    environment:
+      # The last entry (uploads) must stay (${PWD} = running docker compose from the project directory)
+      FILE_ROOTS: "/private/tmp=/host/tmp:${HOME}/Desktop=/host/Desktop:${HOME}/Downloads=/host/Downloads:${PWD}/data/uploads=/uploads"
+
+  # Optional: env vars used by caddy-private/*.caddy proxies (e.g. a secret for the backend); put the values in .env
+  # caddy:
+  #   environment:
+  #     DOCS_PROXY_SECRET: ${DOCS_PROXY_SECRET}

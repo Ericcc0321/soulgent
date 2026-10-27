@@ -1,0 +1,47 @@
+/* The seaview room: signs, plates, lists, off duty.
+   Keys not here yet show the simplified original (logged once). */
+
+/* ── Theme names and zone list states (glossary) ── */
+"zone.row.waiting" = "Waiting for you";
+"zone.row.busy" = "Working";
+"zone.row.news" = "Has news";
+"zone.row.seen" = "Seen";
+
+/* ── Zone (lists, off duty, check-in, bubbles) ── */
+/* title of the rest room's list (glossary: the rest room = Lounge) */
+"list.rest" = "Lounge · %lld";
+/* title of check-in's list */
+"list.visitor" = "Check-in · %lld";
+"list.none" = "Nobody here right now";
+/* accessibility label */
+"list.close" = "Close List";
+/* a row of the rest room's list with no seat */
+"list.noSeat" = "No seat";
+/* a row with no desk */
+"list.noDesk" = "No desk";
+/* after the rows shown */
+"list.more" = "+%lld more";
+/* glossary */
+"list.off" = "Off duty · %lld (click to wake)";
+"off.waking" = "Waking…";
+"off.failed" = "Couldn't wake";
+"off.lastActive.unknown" = "Last active: unknown";
+"off.lastActive.minutes" = "Last active %lldm ago";
+"off.lastActive.hours" = "Last active %lldh ago";
+"off.lastActive.days" = "Last active %lldd ago";
+"off.at.unknown" = "Off since: unknown";
+/* %@ = a time (HH:mm, or M/d HH:mm when not today) */
+"off.at" = "Off since %@";
+/* the zone card's last line */
+"card.folder" = "Folder: %@";
+"card.folder.unknown" = "unknown";
+/* glossary */
+"checkin.active" = "Checking in";
+/* after checkin.active on the zone card */
+"checkin.suggest" = " · Suggested name: %@";
+/* the sign over the check-in spot */
+"zone.visitor" = "Check-in";
+/* a visitor's bubble without a note */
+"say.plain" = "Wants a word";
+/* bubble when sending a session off duty did not go through */
+"say.refused" = "Didn't leave";

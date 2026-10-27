@@ -1,0 +1,166 @@
+/* The board (the duty room), the title bar, the menu-bar menu and the time words.
+   Keys not here yet show the simplified original (logged once). */
+
+/* under a minute */
+"time.justNow" = "刚刚";
+/* a length of time: minutes */
+"time.minutes" = "%lld 分钟";
+/* hours */
+"time.hours" = "%lld 小时";
+/* days */
+"time.days" = "%lld 天";
+/* %@ = time.minutes / hours / days: that long ago (finished sessions) */
+"time.ago" = "%@前";
+/* %@ = a length of time (or time.justNow): waiting that long for approval */
+"time.waitingApproval" = "等你批准 %@";
+/* %@ = a length of time: waiting that long for an answer */
+"time.waitingAnswer" = "等你回答 %@";
+/* %@ = a length of time: waiting that long, for what not known */
+"time.waiting" = "等你 %@";
+/* a card whose session has work running in the background: how many tasks (%lld). BG N in all three (glossary, as the phone's top bar) */
+"bg.count" = "BG %lld";
+/* the error group's title, its count (board header, title bar, menu) and WorkBuddy's error under a name. */
+"board.failed" = "出错";
+/* under a name in the office and the sea room: Claude Code retrying a call, attempt %1$lld of %2$lld. */
+"board.fail.retrying" = "正在重试 %lld/%lld";
+/* under a name: the usage limit was hit (Claude Code's own words are on the card). */
+"board.fail.rateLimit" = "用量到顶";
+/* under a name: the login has expired. */
+"board.fail.relogin" = "要重新登录";
+/* under a name: WorkBuddy stopped the session. */
+"board.fail.stopped" = "已中止";
+/* under a name: an API error with its HTTP status (%lld). */
+"board.fail.apiStatus" = "API 出错 %lld";
+/* under a name: an API error without a status. */
+"board.fail.api" = "API 出错";
+
+/* ── Settings / menu bar / About / search ── */
+/* menu-bar menu's first line */
+"menu.counts" = "%lld 在等你 · %lld 有话说 · %lld 在干活";
+/* menu-bar menu (en says Soulgent, as the glossary: the Mac program is not called the Dashboard) */
+"menu.toggle" = "显示 / 隐藏 Soulgent";
+/* menu-bar menu */
+"menu.markAllSeen" = "全部标为看过";
+/* menu-bar menu */
+"menu.settings" = "设置…";
+/* menu-bar menu */
+"menu.about" = "关于 Soulgent";
+/* menu-bar menu */
+"menu.quit" = "退出 Soulgent";
+/* menu-bar item and the Settings switch */
+"menu.spotlight" = "聚光灯：跟着 Orca 里的会话";
+/* %@ = menu.spotlight */
+"menu.spotlight.needsAccess" = "%@（需要辅助功能权限…）";
+/* tooltip of the menu item without the permission */
+"menu.spotlight.help.needsAccess" = "要在 系统设置 > 隐私与安全性 > 辅助功能 里允许「Soulgent」。它请 Orca 把页面开放给辅助功能，只读标签栏上的标签名，好知道你在哪个会话里打字。";
+/* tooltip, on */
+"menu.spotlight.help.on" = "办公室里，你在 Orca 里打字的那个会话头上有一束光。点一下关掉。";
+/* tooltip, off */
+"menu.spotlight.help.off" = "点一下打开：办公室里给你在 Orca 里打字的那个会话打一束光。";
+/* %@ = the mode's name; a mode the window is too small for */
+"menu.modeNeedsWindow" = "%@（窗口再大一些才显示）";
+/* menu item and the Settings row; %lld = how many */
+"menu.unban" = "恢复拉黑的角色（%lld）";
+/* About box */
+"about.version" = "版本 %@";
+/* version shown when the bundle has none */
+"about.devBuild" = "开发版";
+/* About box */
+"about.blurb" = "在一个浮动小窗里看所有 Claude Code / Codex 会话：谁在等你、谁有话说、谁在干活。";
+/* About box button */
+"about.ok" = "好";
+/* About box button */
+"about.openRepo" = "打开项目目录";
+"search.help" = "搜索会话（名字、项目、目录）";
+/* accessibility label */
+"search.label" = "搜索会话";
+"search.placeholder" = "搜索会话：名字、项目、目录";
+/* accessibility label */
+"search.close" = "关闭搜索";
+"search.none" = "没有找到";
+
+/* ── Panel (duty room, title bar, cards, tooltips) ── */
+/* SummaryLine.displayText (the card's line; --dump keeps its own) */
+"line.ask" = "问你：%@";
+/* more than one question */
+"line.ask.count" = "问你：%@（共 %lld 个问题）";
+"line.askGeneric" = "在等你回答问题";
+"line.plan" = "计划写好了，等你批准";
+"line.approve.run" = "等你批准运行：%@";
+"line.approve.edit" = "等你批准修改：%@";
+/* a file name not given */
+"line.approve.edit.file" = "文件";
+"line.approve.tool" = "等你批准使用 %@";
+"line.approve" = "等你批准";
+/* no options known (with options: Plurals common.answerOptions) */
+"line.answer" = "等你回答";
+"line.paused" = "已暂停";
+"line.stopped" = "已中止";
+"line.error" = "出错";
+"line.you" = "你：%@";
+"line.relay.agent" = "处理子代理回报…";
+"line.relay.peer" = "处理其他会话的消息…";
+"line.relay.from" = "处理 %@ 的回报…";
+"line.apiError.auth" = "要重新登录";
+"line.apiError.status" = "API 出错 %lld：%@";
+"line.apiError" = "API 出错：%@";
+"line.retrying" = "正在重试 %lld/%lld";
+/* glossary */
+"line.disconnected" = "意外退出";
+/* after ↔ on a finished card whose last turn came from another session */
+"origin.peer.other" = "与其他会话往来";
+/* duty room group title (glossary) */
+"group.waiting" = "在等你";
+/* duty room group title */
+"group.unread" = "干完了，有话对你说";
+/* duty room group title */
+"group.busy" = "正在干活";
+/* duty room group title (glossary) */
+"group.seen" = "看过了";
+/* duty room group title */
+"group.resting" = "休息区";
+/* title bar count */
+"count.waiting" = "在等你";
+/* title bar count */
+"count.news" = "有话说";
+/* title bar count */
+"count.working" = "在干活";
+/* board header line (two spaces between) */
+"board.header" = "%lld 在等你  %lld 有话说  %lld 在干活";
+"board.empty" = "现在没有打开的会话。在 Orca 里开一个，它就会出现在这里。";
+/* narrow inbox */
+"inbox.older.show" = "还有 %lld 个更早的";
+/* narrow inbox */
+"inbox.older.hide" = "收起更早的 %lld 个";
+/* title bar: the 5-hour usage */
+"usage.fiveHour" = "当前";
+/* title bar: the weekly usage */
+"usage.week" = "本周";
+"usage.help.title" = "Claude Code 用量，所有会话共用";
+"usage.help.fiveHour" = "当前 5 小时：%lld%%，%@ 重置";
+"usage.help.week" = "本周：%lld%%，%@ 重置";
+/* a date pattern (DateFormatter), not words */
+"usage.dateFormat" = "M月d日 HH:mm";
+/* title bar button */
+"bar.markAllSeen" = "全部标为看过";
+/* title bar button, narrow window */
+"bar.markAllSeen.short" = "全部看过";
+"bar.markAllSeen.help" = "把所有干完的会话都当作已经看过；标记了待回复的不动";
+"card.help.pinned" = "已标记待回复：回了话会自动取消";
+"card.help.model" = "，模型 %@";
+"card.help.codex" = "这是 Codex CLI 会话";
+"card.help.codexApp" = "这是 Codex App 的会话";
+"card.help.workbuddy" = "这是 WorkBuddy 的会话";
+"card.help.click" = "点一下跳到 %@ 里的这个会话";
+"card.help.rightClick" = "右键打开菜单：跳到会话、标记或取消待回复、转到工位或休息区、在访达里打开项目目录";
+/* tooltip of a peer on a card; %@ = a length of time */
+"peer.help" = "发给它 %lld 条，收到它 %lld 条，最近一次在 %@前";
+/* between the tooltip and the peer's last note */
+"peer.help.sep" = "：";
+
+/* the board's header and the menu's first line with the error count (%@ = board.failed) after the waiting. */
+"board.header.failed" = "%lld 在等你  %lld %@  %lld 有话说  %lld 在干活";
+"menu.counts.failed" = "%lld 在等你 · %lld %@ · %lld 有话说 · %lld 在干活";
+
+/* the title bar's amber dot: another program's format not understood (%@ = Claude Code, Codex, WorkBuddy or Orca), one line each. */
+"bar.formatWarning" = "%@ 会话格式变了，部分信息可能缺失";

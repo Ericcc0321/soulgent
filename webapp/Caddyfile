@@ -1,0 +1,62 @@
+# Soulgent web app: HTTPS on the LAN with a local CA, cookie gate via forward_auth to the api, static shell from web/.
+{
+	default_sni {$SITE_IP}
+	local_certs
+}
+
+https://{$SITE_HOST}:8443, https://{$SITE_IP}:8443 {
+	encode zstd gzip
+
+	# Strip client-supplied X-ZBS-* headers so identity and the private-proxy secret cannot be forged (a site-level request_header runs before forward_auth;
+	# inside a handle below it would run after forward_auth and also strip the X-ZBS-User the gate just copied)
+	request_header -X-ZBS-User
+	request_header -X-ZBS-Proxy-Secret
+	request_header -X-Forwarded-Prefix
+
+	# Root certificate download (public)
+	handle /ca.crt {
+		root * /data/caddy/pki/authorities/local
+		rewrite * /root.crt
+		header Content-Type application/x-x509-ca-cert
+		file_server
+	}
+
+	# Pet images are public, no gate
+	handle_path /pets/* {
+		root * /pets
+		header Cache-Control "public, max-age=604800"
+		file_server
+	}
+
+	# Everything else goes through the API cookie gate first (public paths are allowed by the check itself)
+	handle {
+		forward_auth api:8080 {
+			uri /api/auth/check
+			# X-ZBS-User: the account (admin / guest) the gate resolved from the cookie, copied onto the request for private proxies
+			copy_headers Set-Cookie X-ZBS-User
+		}
+
+		# Private reverse proxies (other pages for admin only) live in caddy-private/*.caddy (gitignored; template: proxy.caddy.example).
+		# Use a glob so Caddy still starts with no files (importing a single missing file fails). Guests hitting these prefixes get 403 from the gate per
+		# ADMIN_ONLY_PREFIXES in .env; the guest /api allowlist is also pre-filtered in the gate, and each endpoint re-checks the bound session
+		import private/*.caddy
+
+		# Preview pages under /lab/ go through the gate: logged-out users are redirected to /login.html, guests get 403
+		handle /lab/* {
+			root * /srv
+			header Cache-Control no-cache
+			file_server
+		}
+
+		handle /api/* {
+			reverse_proxy api:8080
+		}
+
+		handle {
+			root * /srv
+			@nocache path / /index.html /sw.js /login.html /manifest.webmanifest /app.js /logic.js /md.js /figures.js /viewer.js /style.css /i18n.js
+			header @nocache Cache-Control no-cache
+			file_server
+		}
+	}
+}

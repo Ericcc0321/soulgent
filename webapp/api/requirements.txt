@@ -1,0 +1,4 @@
+pywebpush==2.1.2
+cryptography==50.0.2
+aiohttp==3.14.5
+Pillow==11.3.0

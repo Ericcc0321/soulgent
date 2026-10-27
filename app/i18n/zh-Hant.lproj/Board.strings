@@ -1,0 +1,154 @@
+/* The board (the duty room), the title bar, the menu-bar menu and the time words.
+   Keys not here yet show the simplified original (logged once). */
+
+/* a card whose session has work running in the background: how many tasks (%lld). BG N in all three (glossary, as the phone's top bar) */
+"bg.count" = "BG %lld";
+/* the error group and the words under a name. */
+"board.failed" = "出錯";
+"board.fail.retrying" = "正在重試 %lld/%lld";
+"board.fail.rateLimit" = "用量已達上限";
+"board.fail.relogin" = "需要重新登入";
+"board.fail.stopped" = "已中止";
+"board.fail.apiStatus" = "API 出錯 %lld";
+"board.fail.api" = "API 出錯";
+
+/* ── Theme names and zone list states (glossary) ── */
+"time.justNow" = "剛剛";
+"time.minutes" = "%lld 分鐘";
+"time.hours" = "%lld 小時";
+"time.days" = "%lld 天";
+"time.ago" = "%@前";
+"time.waitingApproval" = "等你核准 %@";
+"time.waitingAnswer" = "等你回答 %@";
+"time.waiting" = "等你 %@";
+
+/* ── Settings / menu bar / About / search ── */
+/* menu-bar menu's first line */
+"menu.counts" = "%lld 在等你 · %lld 有話說 · %lld 在幹活";
+/* menu-bar menu (en says Soulgent, as the glossary: the Mac program is not called the Dashboard) */
+"menu.toggle" = "顯示 / 隱藏 Soulgent";
+/* menu-bar menu */
+"menu.markAllSeen" = "全部標為已看";
+/* menu-bar menu */
+"menu.settings" = "設定…";
+/* menu-bar menu */
+"menu.about" = "關於 Soulgent";
+/* menu-bar menu */
+"menu.quit" = "結束 Soulgent";
+/* menu-bar item and the Settings switch */
+"menu.spotlight" = "聚光燈：跟著 Orca 裡的會話";
+/* %@ = menu.spotlight */
+"menu.spotlight.needsAccess" = "%@（需要輔助使用權限…）";
+/* tooltip of the menu item without the permission */
+"menu.spotlight.help.needsAccess" = "要在「系統設定 > 隱私權與安全性 > 輔助使用」裡允許「Soulgent」。它請 Orca 把頁面開放給輔助使用，只讀標籤列上的標籤名稱，好知道你在哪個會話裡打字。";
+/* tooltip, on */
+"menu.spotlight.help.on" = "辦公室裡，你在 Orca 裡打字的那個會話頭上有一束光。點一下關掉。";
+/* tooltip, off */
+"menu.spotlight.help.off" = "點一下開啟：辦公室裡給你在 Orca 裡打字的那個會話打一束光。";
+/* %@ = the mode's name; a mode the window is too small for */
+"menu.modeNeedsWindow" = "%@（視窗再大一些才顯示）";
+/* menu item and the Settings row; %lld = how many */
+"menu.unban" = "恢復封鎖的角色（%lld）";
+/* About box */
+"about.version" = "版本 %@";
+/* version shown when the bundle has none */
+"about.devBuild" = "開發版";
+/* About box */
+"about.blurb" = "在一個浮動小視窗裡看所有 Claude Code / Codex 會話：誰在等你、誰有話說、誰在幹活。";
+/* About box button */
+"about.ok" = "好";
+/* About box button */
+"about.openRepo" = "開啟專案資料夾";
+"search.help" = "搜尋會話（名稱、專案、資料夾）";
+/* accessibility label */
+"search.label" = "搜尋會話";
+"search.placeholder" = "搜尋會話：名稱、專案、資料夾";
+/* accessibility label */
+"search.close" = "關閉搜尋";
+"search.none" = "找不到";
+
+/* ── Panel (duty room, title bar, cards, tooltips) ── */
+/* SummaryLine.displayText (the card's line; --dump keeps its own) */
+"line.ask" = "問你：%@";
+/* more than one question */
+"line.ask.count" = "問你：%@（共 %lld 個問題）";
+"line.askGeneric" = "在等你回答問題";
+"line.plan" = "計畫寫好了，等你核准";
+"line.approve.run" = "等你核准執行：%@";
+"line.approve.edit" = "等你核准修改：%@";
+/* a file name not given */
+"line.approve.edit.file" = "檔案";
+"line.approve.tool" = "等你核准使用 %@";
+"line.approve" = "等你核准";
+/* no options known (with options: Plurals common.answerOptions) */
+"line.answer" = "等你回答";
+"line.paused" = "已暫停";
+"line.stopped" = "已中止";
+"line.error" = "出錯";
+"line.you" = "你：%@";
+"line.relay.agent" = "處理子代理回報…";
+"line.relay.peer" = "處理其他會話的訊息…";
+"line.relay.from" = "處理 %@ 的回報…";
+"line.apiError.auth" = "需要重新登入";
+"line.apiError.status" = "API 出錯 %lld：%@";
+"line.apiError" = "API 出錯：%@";
+"line.retrying" = "正在重試 %lld/%lld";
+/* glossary */
+"line.disconnected" = "意外結束";
+/* after ↔ on a finished card whose last turn came from another session */
+"origin.peer.other" = "與其他會話往來";
+/* duty room group title (glossary) */
+"group.waiting" = "在等你";
+/* duty room group title */
+"group.unread" = "完成了，有話對你說";
+/* duty room group title */
+"group.busy" = "在幹活";
+/* duty room group title (glossary) */
+"group.seen" = "看過了";
+/* duty room group title */
+"group.resting" = "休息區";
+/* title bar count */
+"count.waiting" = "在等你";
+/* title bar count */
+"count.news" = "有話說";
+/* title bar count */
+"count.working" = "在幹活";
+/* board header line (two spaces between) */
+"board.header" = "%lld 在等你  %lld 有話說  %lld 在幹活";
+"board.empty" = "現在沒有開啟的會話。在 Orca 裡開一個，它就會出現在這裡。";
+/* narrow inbox */
+"inbox.older.show" = "還有 %lld 個更早的";
+/* narrow inbox */
+"inbox.older.hide" = "收起更早的 %lld 個";
+/* title bar: the 5-hour usage */
+"usage.fiveHour" = "目前";
+/* title bar: the weekly usage */
+"usage.week" = "本週";
+"usage.help.title" = "Claude Code 用量，所有會話共用";
+"usage.help.fiveHour" = "目前 5 小時：%lld%%，%@ 重置";
+"usage.help.week" = "本週：%lld%%，%@ 重置";
+/* a date pattern (DateFormatter), not words */
+"usage.dateFormat" = "M月d日 HH:mm";
+/* title bar button */
+"bar.markAllSeen" = "全部標為已看";
+/* title bar button, narrow window */
+"bar.markAllSeen.short" = "全部已看";
+"bar.markAllSeen.help" = "把所有完成的會話都當作已經看過；標記了稍後回覆的不動";
+"card.help.pinned" = "已標記稍後回覆：回覆後會自動取消";
+"card.help.model" = "，模型 %@";
+"card.help.codex" = "這是 Codex CLI 會話";
+"card.help.codexApp" = "這是 Codex App 的會話";
+"card.help.workbuddy" = "這是 WorkBuddy 的會話";
+"card.help.click" = "點一下跳到 %@ 裡的這個會話";
+"card.help.rightClick" = "右鍵開啟選單：跳到會話、標記或取消稍後回覆、轉到工位或休息區、在 Finder 裡開啟專案資料夾";
+/* tooltip of a peer on a card; %@ = a length of time */
+"peer.help" = "傳給它 %lld 則，收到它 %lld 則，最近一次在 %@前";
+/* between the tooltip and the peer's last note */
+"peer.help.sep" = "：";
+
+/* the board's header and the menu's first line with the error count (%@ = board.failed) after the waiting. */
+"board.header.failed" = "%lld 在等你  %lld %@  %lld 有話說  %lld 在幹活";
+"menu.counts.failed" = "%lld 在等你 · %lld %@ · %lld 有話說 · %lld 在幹活";
+
+/* the title bar's amber dot: another program's format not understood (%@ = Claude Code, Codex, WorkBuddy or Orca), one line each. */
+"bar.formatWarning" = "%@ 會話格式變了，部分資訊可能缺失";

@@ -1,0 +1,12 @@
+{
+  "default": null,
+  "zones": {
+    "Web":   { "name": "Web",   "color": "#4A90D9", "order": 1, "lead": "Web-lead",  "fx": "orbit" },
+    "Docs":  { "name": "Docs",  "color": "#E0A030", "order": 2, "lead": "Docs-lead", "fx": "marquee" },
+    "Infra": { "name": "Infra", "color": "#A070D0", "order": 3, "lead": null,        "fx": "halo" },
+    "Ops":   { "name": "Ops",   "color": "#50B080", "order": 4, "lead": null,        "fx": "circuit" }
+  },
+  "dirs": {
+    "~/code/docs-site": "Docs"
+  }
+}

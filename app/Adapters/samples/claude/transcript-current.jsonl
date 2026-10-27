@@ -1,0 +1,6 @@
+{"type":"permission-mode","permissionMode":"default","sessionId":"00000000-demo-0000-0000-format000001"}
+{"type":"custom-title","customTitle":"demo-garden","sessionId":"00000000-demo-0000-0000-format000001"}
+{"parentUuid":null,"isSidechain":false,"type":"user","message":{"role":"user","content":"Water the demo tomatoes"},"uuid":"u-1","timestamp":"2026-10-20T08:00:00.000Z","cwd":"/Users/demo/Projects/demo-garden","sessionId":"00000000-demo-0000-0000-format000001"}
+{"parentUuid":"u-1","isSidechain":false,"type":"assistant","message":{"model":"claude-demo-1","role":"assistant","content":[{"type":"text","text":"The demo tomatoes are watered."}]},"uuid":"a-1","timestamp":"2026-10-20T08:00:05.000Z","sessionId":"00000000-demo-0000-0000-format000001"}
+{"type":"last-prompt","lastPrompt":"Water the demo tomatoes","sessionId":"00000000-demo-0000-0000-format000001"}
+{"parentUuid":"a-1","isSidechain":false,"type":"system","subtype":"turn_duration","durationMs":5000,"timestamp":"2026-10-20T08:00:06.000Z","sessionId":"00000000-demo-0000-0000-format000001"}

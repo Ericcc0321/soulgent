@@ -1,0 +1,1752 @@
+{
+ "GET / [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET / [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET / [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET / [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/auth/check [admin]": {
+  "handlers": [
+   [
+    "_auth_check"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/auth/check [guest2]": {
+  "handlers": [
+   [
+    "_auth_check"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/auth/check [guest]": {
+  "handlers": [
+   [
+    "_auth_check"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/auth/check [none]": {
+  "handlers": [
+   [
+    "_auth_check"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/auth/me [admin]": {
+  "handlers": [
+   [
+    "_auth_me"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/auth/me [guest2]": {
+  "handlers": [
+   [
+    "_auth_me"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/auth/me [guest]": {
+  "handlers": [
+   [
+    "_auth_me"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/auth/me [none]": {
+  "handlers": [
+   [
+    "_auth_me"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/avatar [admin]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/avatar",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/avatar [guest2]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/avatar",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/avatar [guest]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/avatar",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/avatar [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/avatar?account=guest [admin]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/avatar",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/avatar?account=guest [guest2]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/avatar",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/avatar?account=guest [guest]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/avatar",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/avatar?account=guest [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/file [admin]": {
+  "handlers": [
+   [
+    "_file",
+    "",
+    "admin"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/file [guest2]": {
+  "handlers": [
+   [
+    "_file",
+    "",
+    "gb"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/file [guest]": {
+  "handlers": [
+   [
+    "_file",
+    "",
+    "guest"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/file [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/file?p=/x [admin]": {
+  "handlers": [
+   [
+    "_file",
+    "p=/x",
+    "admin"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/file?p=/x [guest2]": {
+  "handlers": [
+   [
+    "_file",
+    "p=/x",
+    "gb"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/file?p=/x [guest]": {
+  "handlers": [
+   [
+    "_file",
+    "p=/x",
+    "guest"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/file?p=/x [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/filex [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/filex [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/filex [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/filex [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/nothing [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/nothing [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/nothing [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/nothing [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/transcript [admin]": {
+  "handlers": [
+   [
+    "_transcript",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "",
+    "offduty=True"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/transcript [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/transcript [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/transcript [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/wake [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/wake [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/wake [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/wake [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/profile [admin]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/profile",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/profile [guest2]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/profile",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/profile [guest]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/profile",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/profile [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/profile?account=gb [admin]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/profile",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/profile?account=gb [guest2]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/profile",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/profile?account=gb [guest]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/profile",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/profile?account=gb [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/profile?account=nobody [admin]": {
+  "handlers": [],
+  "status": 400
+ },
+ "GET /api/profile?account=nobody [guest2]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/profile",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/profile?account=nobody [guest]": {
+  "handlers": [
+   [
+    "_profile_get",
+    "/api/profile",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/profile?account=nobody [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/push/devices [admin]": {
+  "handlers": [],
+  "status": 200
+ },
+ "GET /api/push/devices [guest2]": {
+  "handlers": [],
+  "status": 200
+ },
+ "GET /api/push/devices [guest]": {
+  "handlers": [],
+  "status": 200
+ },
+ "GET /api/push/devices [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/push/key [admin]": {
+  "handlers": [],
+  "status": 503
+ },
+ "GET /api/push/key [guest2]": {
+  "handlers": [],
+  "status": 503
+ },
+ "GET /api/push/key [guest]": {
+  "handlers": [],
+  "status": 503
+ },
+ "GET /api/push/key [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/requests/ [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/requests/ [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/requests/ [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/requests/ [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/requests/r1 [admin]": {
+  "handlers": [
+   [
+    "_request_status",
+    "r1"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/requests/r1 [guest2]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/requests/r1 [guest]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/requests/r1 [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/requests/r1/x [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/requests/r1/x [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/requests/r1/x [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/requests/r1/x [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/search [admin]": {
+  "handlers": [
+   [
+    "_gsearch",
+    ""
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/search [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/search [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/search [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/search?q=a [admin]": {
+  "handlers": [
+   [
+    "_gsearch",
+    "q=a"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/search?q=a [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/search?q=a [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/search?q=a [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/agent/a%201 [admin]": {
+  "handlers": [
+   [
+    "_agent",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "a 1",
+    ""
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/agent/a%201 [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/agent/a%201 [guest]": {
+  "handlers": [
+   [
+    "_agent",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "a 1",
+    "",
+    "guest=guest"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/agent/a%201 [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/agent/a1 [admin]": {
+  "handlers": [
+   [
+    "_agent",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "a1",
+    ""
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/agent/a1 [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/agent/a1 [guest]": {
+  "handlers": [
+   [
+    "_agent",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "a1",
+    "",
+    "guest=guest"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/agent/a1 [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/context [admin]": {
+  "handlers": [
+   [
+    "_context",
+    "1aaaaaaa-1111-4111-8111-111111111111"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/context [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/context [guest]": {
+  "handlers": [
+   [
+    "_context",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "guest=<Guest>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/context [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/context/x [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/context/x [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/context/x [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/context/x [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/lineage [admin]": {
+  "handlers": [
+   [
+    "_history",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "lineage",
+    ""
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/lineage [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/lineage [guest]": {
+  "handlers": [
+   [
+    "_history",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "lineage",
+    "",
+    "guest=<Guest>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/lineage [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/other [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/other [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/other [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/other [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/search?q=hi [admin]": {
+  "handlers": [
+   [
+    "_history",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "search",
+    "q=hi"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/search?q=hi [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/search?q=hi [guest]": {
+  "handlers": [
+   [
+    "_history",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "search",
+    "q=hi",
+    "guest=<Guest>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/1aaaaaaa-1111-4111-8111-111111111111/search?q=hi [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/agent/a1 [admin]": {
+  "handlers": [
+   [
+    "_agent",
+    "3ccccccc-3333-4333-8333-333333333333",
+    "a1",
+    ""
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/agent/a1 [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/agent/a1 [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/agent/a1 [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/context [admin]": {
+  "handlers": [
+   [
+    "_context",
+    "3ccccccc-3333-4333-8333-333333333333"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/context [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/context [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/context [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/lineage [admin]": {
+  "handlers": [
+   [
+    "_history",
+    "3ccccccc-3333-4333-8333-333333333333",
+    "lineage",
+    ""
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/lineage [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/lineage [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/session/3ccccccc-3333-4333-8333-333333333333/lineage [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/transcript [admin]": {
+  "handlers": [
+   [
+    "_transcript",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    ""
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/transcript [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/transcript [guest]": {
+  "handlers": [
+   [
+    "_transcript",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "",
+    "guest=<Guest>"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/transcript [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/sessions/3ccccccc-3333-4333-8333-333333333333/transcript?n=5 [admin]": {
+  "handlers": [
+   [
+    "_transcript",
+    "3ccccccc-3333-4333-8333-333333333333",
+    "n=5"
+   ]
+  ],
+  "status": 200
+ },
+ "GET /api/sessions/3ccccccc-3333-4333-8333-333333333333/transcript?n=5 [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/sessions/3ccccccc-3333-4333-8333-333333333333/transcript?n=5 [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/sessions/3ccccccc-3333-4333-8333-333333333333/transcript?n=5 [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/snapshot [admin]": {
+  "handlers": [],
+  "status": 200
+ },
+ "GET /api/snapshot [guest2]": {
+  "handlers": [],
+  "status": 200
+ },
+ "GET /api/snapshot [guest]": {
+  "handlers": [],
+  "status": 200
+ },
+ "GET /api/snapshot [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/zone/Web/taskboard [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/zone/Web/taskboard [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/zone/Web/taskboard [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/zone/Web/taskboard [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /api/zone/bad%20zone/taskboard [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /api/zone/bad%20zone/taskboard [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/zone/bad%20zone/taskboard [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /api/zone/bad%20zone/taskboard [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /index.html [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /index.html [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /index.html [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /index.html [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /lab [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /lab [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /lab [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /lab [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "GET /lab/x [admin]": {
+  "handlers": [],
+  "status": 404
+ },
+ "GET /lab/x [guest2]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /lab/x [guest]": {
+  "handlers": [],
+  "status": 403
+ },
+ "GET /lab/x [none]": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/auth [admin] body={\"key\": \"x\"}": {
+  "handlers": [
+   [
+    "_auth_login"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/auth [admin] {\"Origin\": \"null\"} body={\"key\": \"x\"}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/auth [guest2] body={\"key\": \"x\"}": {
+  "handlers": [
+   [
+    "_auth_login"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/auth [guest2] {\"Origin\": \"null\"} body={\"key\": \"x\"}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/auth [guest] body={\"key\": \"x\"}": {
+  "handlers": [
+   [
+    "_auth_login"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/auth [guest] {\"Origin\": \"null\"} body={\"key\": \"x\"}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/auth [none] body={\"key\": \"x\"}": {
+  "handlers": [
+   [
+    "_auth_login"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/auth [none] {\"Origin\": \"null\"} body={\"key\": \"x\"}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/auth/logout [admin]": {
+  "handlers": [
+   [
+    "_auth_logout"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/auth/logout [guest2]": {
+  "handlers": [
+   [
+    "_auth_logout"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/auth/logout [guest]": {
+  "handlers": [
+   [
+    "_auth_logout"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/auth/logout [none]": {
+  "handlers": [
+   [
+    "_auth_logout"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/diag [admin] body={\"lines\":[]}": {
+  "handlers": [
+   [
+    "_diag",
+    "guest=None"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/diag [guest2] body={\"lines\":[]}": {
+  "handlers": [
+   [
+    "_diag",
+    "guest=gb"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/diag [guest] body={\"lines\":[]}": {
+  "handlers": [
+   [
+    "_diag",
+    "guest=guest"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/diag [none] body={\"lines\":[]}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/file [admin] body={}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /api/file [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/file [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/file [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/nothing [admin] body={}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /api/nothing [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/nothing [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/nothing [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/transcript [admin] body={}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/transcript [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/transcript [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/transcript [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/wake [admin] body={}": {
+  "handlers": [
+   [
+    "_wake",
+    "1aaaaaaa-1111-4111-8111-111111111111"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/wake [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/wake [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/offduty/1aaaaaaa-1111-4111-8111-111111111111/wake [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/presence [admin] body={\"act\": 0, \"dev\": \"devAAAA11112222\"}": {
+  "handlers": [
+   [
+    "_presence_post",
+    "admin"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/presence [admin] {\"Content-Type\": \"text/plain\"} body={\"act\": 0, \"dev\": \"devAAAA11112222\"}": {
+  "handlers": [
+   [
+    "_presence_post",
+    "admin"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/presence [guest2] body={\"act\": 0, \"dev\": \"devAAAA11112222\"}": {
+  "handlers": [
+   [
+    "_presence_post",
+    "gb"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/presence [guest2] {\"Content-Type\": \"text/plain\"} body={\"act\": 0, \"dev\": \"devAAAA11112222\"}": {
+  "handlers": [
+   [
+    "_presence_post",
+    "gb"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/presence [guest] body={\"act\": 0, \"dev\": \"devAAAA11112222\"}": {
+  "handlers": [
+   [
+    "_presence_post",
+    "guest"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/presence [guest] {\"Content-Type\": \"text/plain\"} body={\"act\": 0, \"dev\": \"devAAAA11112222\"}": {
+  "handlers": [
+   [
+    "_presence_post",
+    "guest"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/presence [none] body={\"act\": 0, \"dev\": \"devAAAA11112222\"}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/presence [none] {\"Content-Type\": \"text/plain\"} body={\"act\": 0, \"dev\": \"devAAAA11112222\"}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/profile [admin] body={\"nickname\": \"n\"}": {
+  "handlers": [
+   [
+    "_profile_post"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/profile [guest2] body={\"nickname\": \"n\"}": {
+  "handlers": [
+   [
+    "_profile_post",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/profile [guest] body={\"nickname\": \"n\"}": {
+  "handlers": [
+   [
+    "_profile_post",
+    "<ProfileStore>"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/profile [none] body={\"nickname\": \"n\"}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/push/devices/delete [admin] body={}": {
+  "handlers": [
+   [
+    "_device_delete",
+    "admin"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/push/devices/delete [guest2] body={}": {
+  "handlers": [
+   [
+    "_device_delete",
+    "gb"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/push/devices/delete [guest] body={}": {
+  "handlers": [
+   [
+    "_device_delete",
+    "guest"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/push/devices/delete [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/push/subscribe [admin] body={}": {
+  "handlers": [],
+  "status": 400
+ },
+ "POST /api/push/subscribe [guest2] body={}": {
+  "handlers": [],
+  "status": 400
+ },
+ "POST /api/push/subscribe [guest] body={}": {
+  "handlers": [],
+  "status": 400
+ },
+ "POST /api/push/subscribe [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/push/test [admin] body={}": {
+  "handlers": [],
+  "status": 503
+ },
+ "POST /api/push/test [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/push/test [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/push/test [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/requests/r1 [admin] body={}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /api/requests/r1 [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/requests/r1 [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/requests/r1 [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/search [admin] body={}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /api/search [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/search [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/search [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/seen-all [admin] body={}": {
+  "handlers": [],
+  "status": 200
+ },
+ "POST /api/seen-all [admin] {\"Content-Type\": \"text/plain\"} body={}": {
+  "handlers": [],
+  "status": 415
+ },
+ "POST /api/seen-all [admin] {\"Origin\": \"https://evil.example\"} body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/seen-all [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/seen-all [guest2] {\"Content-Type\": \"text/plain\"} body={}": {
+  "handlers": [],
+  "status": 415
+ },
+ "POST /api/seen-all [guest2] {\"Origin\": \"https://evil.example\"} body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/seen-all [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/seen-all [guest] {\"Content-Type\": \"text/plain\"} body={}": {
+  "handlers": [],
+  "status": 415
+ },
+ "POST /api/seen-all [guest] {\"Origin\": \"https://evil.example\"} body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/seen-all [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/seen-all [none] {\"Content-Type\": \"text/plain\"} body={}": {
+  "handlers": [],
+  "status": 415
+ },
+ "POST /api/seen-all [none] {\"Origin\": \"https://evil.example\"} body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/bogus [admin] body={}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/bogus [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/bogus [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/bogus [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/mute [admin] body={\"muted\": true}": {
+  "handlers": [
+   [
+    "_mute",
+    "1aaaaaaa-1111-4111-8111-111111111111"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/mute [guest2] body={\"muted\": true}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/mute [guest] body={\"muted\": true}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/mute [none] body={\"muted\": true}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/offduty [admin] body={}": {
+  "handlers": [
+   [
+    "_offduty",
+    "1aaaaaaa-1111-4111-8111-111111111111"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/offduty [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/offduty [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/offduty [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [admin] body={\"pinned\": \"yes\"}": {
+  "handlers": [],
+  "status": 400
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [admin] body={\"pinned\": true}": {
+  "handlers": [],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [guest2] body={\"pinned\": \"yes\"}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [guest2] body={\"pinned\": true}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [guest] body={\"pinned\": \"yes\"}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [guest] body={\"pinned\": true}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [none] body={\"pinned\": \"yes\"}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/pin [none] body={\"pinned\": true}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/rest [admin] body={}": {
+  "handlers": [
+   [
+    "_rest",
+    "1aaaaaaa-1111-4111-8111-111111111111"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/rest [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/rest [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/rest [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/screen [admin] body={}": {
+  "handlers": [
+   [
+    "_send_request",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "screen"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/screen [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/screen [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/screen [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/seen [admin] body={}": {
+  "handlers": [],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/seen [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/seen [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/seen [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/send [admin] body={\"text\": \"hi\"}": {
+  "handlers": [
+   [
+    "_send_request",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "send"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/send [admin] {\"Content-Type\": \"text/plain\"} body={\"text\": \"hi\"}": {
+  "handlers": [],
+  "status": 415
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/send [guest2] body={\"text\": \"hi\"}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/send [guest2] {\"Content-Type\": \"text/plain\"} body={\"text\": \"hi\"}": {
+  "handlers": [],
+  "status": 415
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/send [guest] body={\"text\": \"hi\"}": {
+  "handlers": [
+   [
+    "_guest_send",
+    "<Guest>",
+    "1aaaaaaa-1111-4111-8111-111111111111"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/send [guest] {\"Content-Type\": \"text/plain\"} body={\"text\": \"hi\"}": {
+  "handlers": [],
+  "status": 415
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/send [none] body={\"text\": \"hi\"}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/send [none] {\"Content-Type\": \"text/plain\"} body={\"text\": \"hi\"}": {
+  "handlers": [],
+  "status": 415
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/top [admin] body={\"top\": true}": {
+  "handlers": [
+   [
+    "_top",
+    "1aaaaaaa-1111-4111-8111-111111111111"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/top [guest2] body={\"top\": true}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/top [guest] body={\"top\": true}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/top [none] body={\"top\": true}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/transcript [admin] body={}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/transcript [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/transcript [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/transcript [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/unseen [admin] body={}": {
+  "handlers": [
+   [
+    "_unseen",
+    "1aaaaaaa-1111-4111-8111-111111111111"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/unseen [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/unseen [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/unseen [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/upload?name=a.txt [admin] body=hello": {
+  "handlers": [
+   [
+    "_upload",
+    "1aaaaaaa-1111-4111-8111-111111111111",
+    "name=a.txt"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/upload?name=a.txt [admin] {\"Origin\": \"https://evil.example\"} body=hello": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/upload?name=a.txt [guest2] body=hello": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/upload?name=a.txt [guest2] {\"Origin\": \"https://evil.example\"} body=hello": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/upload?name=a.txt [guest] body=hello": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/upload?name=a.txt [guest] {\"Origin\": \"https://evil.example\"} body=hello": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/upload?name=a.txt [none] body=hello": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/1aaaaaaa-1111-4111-8111-111111111111/upload?name=a.txt [none] {\"Origin\": \"https://evil.example\"} body=hello": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/3ccccccc-3333-4333-8333-333333333333/send [admin] body={\"text\": \"hi\"}": {
+  "handlers": [
+   [
+    "_send_request",
+    "3ccccccc-3333-4333-8333-333333333333",
+    "send"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/sessions/3ccccccc-3333-4333-8333-333333333333/send [guest2] body={\"text\": \"hi\"}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/3ccccccc-3333-4333-8333-333333333333/send [guest] body={\"text\": \"hi\"}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/3ccccccc-3333-4333-8333-333333333333/send [none] body={\"text\": \"hi\"}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/nosuch/pin [admin] body={\"pinned\": true}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /api/sessions/nosuch/pin [guest2] body={\"pinned\": true}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/nosuch/pin [guest] body={\"pinned\": true}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/nosuch/pin [none] body={\"pinned\": true}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/sessions/nosuch/seen [admin] body={}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /api/sessions/nosuch/seen [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/nosuch/seen [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /api/sessions/nosuch/seen [none] body={}": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /api/uploads?name=a.txt [admin] body=hello": {
+  "handlers": [
+   [
+    "_upload",
+    null,
+    "name=a.txt",
+    "admin"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/uploads?name=a.txt [guest2] body=hello": {
+  "handlers": [
+   [
+    "_upload",
+    null,
+    "name=a.txt",
+    "gb"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/uploads?name=a.txt [guest] body=hello": {
+  "handlers": [
+   [
+    "_upload",
+    null,
+    "name=a.txt",
+    "guest"
+   ]
+  ],
+  "status": 200
+ },
+ "POST /api/uploads?name=a.txt [none] body=hello": {
+  "handlers": [],
+  "status": 401
+ },
+ "POST /lab [admin] body={}": {
+  "handlers": [],
+  "status": 404
+ },
+ "POST /lab [guest2] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /lab [guest] body={}": {
+  "handlers": [],
+  "status": 403
+ },
+ "POST /lab [none] body={}": {
+  "handlers": [],
+  "status": 401
+ }
+}

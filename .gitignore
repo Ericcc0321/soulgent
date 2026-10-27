@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Build output
+app/build/
+app/tmp/
+*.app/
+
+# Local files
+*.bak
+*.log
+__pycache__/
+
+# Per-machine settings (signing identity name, private extension path)
+app/.signing-identity
+app/.extension-dir

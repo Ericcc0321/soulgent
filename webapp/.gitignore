@@ -1,0 +1,7 @@
+.env
+data/
+__pycache__/
+*.bak
+backup/
+docker-compose.override.yml
+caddy-private/*.caddy

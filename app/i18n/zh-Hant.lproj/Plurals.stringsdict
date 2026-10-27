@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Plural forms (L10n.format with a number). Chinese has one form (other); English one / other. Glossary words only here
+     too: the zh answer-options wording is the glossary's. -->
+<plist version="1.0">
+<dict>
+	<key>common.answerOptions</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>等你回答（%lld 個選項）</string>
+	</dict>
+	<key>bg.commands</key>
+	<!-- Chinese has the one form: the words themselves, as the code's zh: original -->
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>背景指令 %lld 個</string>
+	</dict>
+	<!-- tooltip of ⚙ N on a card -->
+	<key>subagents.running</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>有 %lld 個子代理在跑</string>
+	</dict>
+	<!-- tooltip of ⇄ N on a card -->
+	<key>peers.talked</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>和 %lld 個會話通過話</string>
+	</dict>
+</dict>
+</plist>

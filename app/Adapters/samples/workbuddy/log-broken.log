@@ -1,0 +1,6 @@
+{"ts":1790000000000,"event":"lifecycle.created","instance":"demo-1","state":"idle"}
+{"ts":1790000000100,"event":"method.requests","instance":"demo-1"}
+{"ts":1790000001000,"event":"state.changed","instance":"demo-1","from":"idle","to":"working"}
+{"ts":1790000003000,"event":"question.opened","instance":"demo-1","options":3}
+{"ts":1790000003010,"event":"state.changed","instance":"demo-1","from":"working","to":"pending"}
+{"ts":1790000003020,"event":"question.permission","instance":"demo-1","options":3}

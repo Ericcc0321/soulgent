@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Plural forms (L10n.format with a number). Chinese has one form (other); English one / other. Glossary words only here
+     too: the zh answer-options wording is the glossary's. -->
+<plist version="1.0">
+<dict>
+	<key>common.answerOptions</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@options@</string>
+		<key>options</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>Needs your answer (%lld option)</string>
+			<key>other</key>
+			<string>Needs your answer (%lld options)</string>
+		</dict>
+	</dict>
+	<key>bg.commands</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@n@</string>
+		<key>n</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld background command</string>
+			<key>other</key>
+			<string>%lld background commands</string>
+		</dict>
+	</dict>
+	<!-- tooltip of ⚙ N on a card -->
+	<key>subagents.running</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@n@</string>
+		<key>n</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld subagent running</string>
+			<key>other</key>
+			<string>%lld subagents running</string>
+		</dict>
+	</dict>
+	<!-- tooltip of ⇄ N on a card -->
+	<key>peers.talked</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@n@</string>
+		<key>n</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>Talked with %lld session</string>
+			<key>other</key>
+			<string>Talked with %lld sessions</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,47 @@
+/* The seaview room: signs, plates, lists, off duty.
+   Keys not here yet show the simplified original (logged once). */
+
+/* ── Theme names and zone list states (glossary) ── */
+"zone.row.waiting" = "在等你";
+"zone.row.busy" = "在幹活";
+"zone.row.news" = "有話說";
+"zone.row.seen" = "看過了";
+
+/* ── Zone (lists, off duty, check-in, bubbles) ── */
+/* title of the rest room's list (glossary: the rest room = Lounge) */
+"list.rest" = "休息室 · %lld";
+/* title of check-in's list */
+"list.visitor" = "報到 · %lld";
+"list.none" = "這裡現在沒有會話";
+/* accessibility label */
+"list.close" = "關閉列表";
+/* a row of the rest room's list with no seat */
+"list.noSeat" = "沒座位";
+/* a row with no desk */
+"list.noDesk" = "未上桌";
+/* after the rows shown */
+"list.more" = "還有 %lld 個";
+/* glossary */
+"list.off" = "下班了 · %lld（點一下喚醒）";
+"off.waking" = "喚醒中…";
+"off.failed" = "喚醒失敗";
+"off.lastActive.unknown" = "最後活動 未知";
+"off.lastActive.minutes" = "最後活動 %lld 分鐘前";
+"off.lastActive.hours" = "最後活動 %lld 小時前";
+"off.lastActive.days" = "最後活動 %lld 天前";
+"off.at.unknown" = "下班於 未知";
+/* %@ = a time (HH:mm, or M/d HH:mm when not today) */
+"off.at" = "下班於 %@";
+/* the zone card's last line */
+"card.folder" = "目錄：%@";
+"card.folder.unknown" = "未知";
+/* glossary */
+"checkin.active" = "報到中";
+/* after checkin.active on the zone card */
+"checkin.suggest" = " · 建議名稱：%@";
+/* the sign over the check-in spot */
+"zone.visitor" = "報到";
+/* a visitor's bubble without a note */
+"say.plain" = "找你說句話";
+/* bubble when sending a session off duty did not go through */
+"say.refused" = "沒送走";
